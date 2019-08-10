@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <script>
-      window.languagePluginUrl = "http://dev.eulertour.com:9000/";
+      window.languagePluginUrl = "http://localhost:9000/";
     </script>
-    <script src="http://dev.eulertour.com:9000/pyodide.js"></script>
+    <script src="http://localhost:9000/pyodide.js"></script>
   </head>
   <body>
     <textarea id="python-input" rows=20 cols=50>
     </textarea>
-    <button onClick="runManim()">
+    <button id="render-button" onClick="runManim()" style="visibility:hidden">
       manim
     </button>
     <script>
@@ -30,12 +30,13 @@ class SquareToCircle(WebScene):
     self.play(FadeOut(square))`
 
       window.languagePluginLoader.then(() => {
-        let manimlib_uri = "http://dev.eulertour.com:9000/manimlib.js";
+        let manimlib_uri = "http://localhost:9000/manimlib.js";
         window.pyodide.loadPackage(manimlib_uri).then(() => {
           window.pyodide.runPython("import manimlib");
           window.pyodide.runPython("import numpy");
           window.manimlib = window.pyodide.pyimport("manimlib");
           window.numpy = window.pyodide.pyimport("numpy");
+          document.getElementById("render-button").style.visibility = "visible";
         });
       });
 
