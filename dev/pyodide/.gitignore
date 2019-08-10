@@ -11,14 +11,15 @@ geckodriver.log
 firefox/
 .vscode
 
-build
 downloads
 host
 installs
 ccache
+packages/
+cpython/
 
 /root/
-/build/
+!packages/manimlib/**/*
 
 /emsdk/emsdk
 

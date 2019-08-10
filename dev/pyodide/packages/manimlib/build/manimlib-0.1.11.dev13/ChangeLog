@@ -1,0 +1,2425 @@
+CHANGES
+=======
+
+* play() and wait() working
+* need to draw mobject from style data, but there seems to be a bug somewhere in jsproxy
+* add more of WebScene, remove scipy and 3b1b-specific code
+* WebScene prints arguments
+* removed tqdm and PIL
+* update numpy and scipy versions
+* DOC: update documentation link in readme
+* Removed the joke
+* Added one more sentence
+* Added code formatting
+* Filled out making\_a\_scene overview
+
+0.1.10
+------
+
+* remove extraneous newline
+* update documentation link again
+
+0.1.9
+-----
+
+* udpate documentation link
+
+0.1.8
+-----
+
+* allow pycairo>=1.18.0 for windows
+
+v0.1.7
+------
+
+* add video\_output\_dir flag
+* Rename ode folder to diffyq
+* Changed ode folder to be named diffyq, since many of these are pde videos
+* Some of the first scenes for diffyq part4
+* Allow Bubble to flip over any axis, which was unnecessarily restricted before
+* Added Line.set\_length
+* frame\_center was getting double-added, messing up MovingCameraScene
+* Beginning chapter 4 animations
+* Change Fourier scene to center on vectors, not circles
+* Update tex\_file\_writing.py
+* Travis CI: The sudo tag is now deprecated
+* Final animations for diffyq chapter 3
+* update windows docs
+* Nearly the final animations for diffyq part 3
+* Latest animations for diffyq part 3
+* interpolate\_mobject should return self
+* Added TangentLine
+* Fix wording
+* Update tutorial description
+* Add a docker diagram to README.md
+* Change docker-compose to reflect README.md changes
+* Change docker instructions on README.md
+* Update link to Todd Zimmerman tutorial
+* Mention VMobject for geometry
+* Update assets with medium preset
+* Fix wording
+* Use monospace for asset annotation
+* Discrete case scenes for diffyq part 3
+* New scenes for diffyq part3
+* Bug fix for the case when the media\_dir has spaces
+* Change output folder heirarchy back to grouping files of similar types, rather grouping them as parts of the same scene
+* Default color of Vector should be white
+* Change default media output directory to from 'video' to 'videos'
+* Latest scenes for diffyq part 3
+* For some reason stage\_scenes still has a hardcoded input directory..
+* Make sure set\_opacity changes background stroke as well
+* Added TracedPath
+* Added int\_func to SHowIncreasingSubsets
+* Minor edit
+* Fix docker install instruction
+* Update README.md
+* Add documentation for the coordinate system
+* Documentation for TipableVMobject
+* Simple wording change
+* Update docker install link
+* fix broken link due to misnamed file
+* Minor changes
+* Update mac install doc to include manim
+* Rewrite learning\_by\_example.py
+* updated Compose file and update docker section of README.md
+* Apply link fix from master
+* Merging mac install doc from jarwin/patch-3
+* Update learning\_by\_example.rst
+* fix documentation links
+* update documentation
+* make media, tex, and video directories configurable via flags
+* Add animation documentation and asset folder
+* reorganize media file tree
+* Scenes up to AnalyzeSineCurve for diffyq part 3
+* remove repeated latex package
+* install less latex
+* update dockerfile, add flag for high quality rendering (#573)
+* Add documentation for constants.py (#572)
+* remove typographically incorrect punctuation from documentation headings (#567)
+* add option -i to save as gif (#529)
+* install pycairo conditionally based on platform identifier (#571)
+* Correction of a bad alt description (#566)
+* Remove duplicate usepackage (#554)
+* New scenes for diffyq part 3
+* Moving the frame\_center of camera was not working.  This fixes it, but I suspect there is a need for a deeper fix where everything is handled in transform\_points\_pre\_display properly for the various camera classes
+* add information to docs (#563)
+* add master\_doc to conf.py
+* Animations up to the preview for the breakdown into sine curves for diffyq chapter 3
+* Add Windows installation documentation
+
+v0.1.5
+------
+
+* Add social badges README
+* Update docs badge
+* test pr on docs
+* change docs to upstream
+* rebase onto upstream
+* make build script executable
+* refactor and test doc deployment
+* third attempt at deploying docs
+* second attempt at deploying docs
+* first attempt at deploying docs
+* Add installation documentation for ubuntu
+* Beginning heat equation solution animations
+* Added simple midpoint function
+* Formatting correction
+* Added c2p and p2c abbreviations to Axes
+* Update pycairo requirement
+* clean up docs
+* Fixed typo in the docs about page (#553)
+* add docs
+* Removed duplicate name\_animations.py
+* Change big\_ol\_pile\_of\_imports to manimlib.imports
+* Fourier series name animations
+* Small tweaks to Fourier series animations
+* Changed SceneFileWriter.get\_default\_file\_name
+* Changed thumbnail of nn1
+* Improved the "Using manim" section in the README
+* Mentioned -r argument in example\_scenes comment
+* Fixed typo in class name in example\_scenes.py
+
+v0.1.4
+------
+
+* Logo (#537)
+* copy docs
+* Update tex\_template.tex
+* update pypi credentials
+* Remove shortcuts.py, restored imports.py
+* Fix description content type
+* Rename "publish" task to "deploy"
+* Add travis job to publish on PyPI
+* Use pbr for setup.py
+* create manimlib.imports
+* fix mishandled relative paths
+* Add build status to README
+* tweak travis configuration
+* Added anaconda environment and windows instructions
+* Make manim installable using setuptools (setup.py)
+* Prefer pwd to install dir for temp files
+* smarter parameterized curve
+* Added pde thumbnail
+* Altered link, to point to 3Blue1Brown.com
+* Link to 3Blue1Brown channel in the README intro
+* Update README.md
+* Final animations for de chapter2
+* Dumb hard-coded file in stage\_scenes
+* Changed how pi creatures follow what happens
+* ALL\_SCENE\_CLASSES -> SCENES\_IN\_ORDER
+* Change patron name scroll
+* Add PiCreature.get\_look\_at\_spot
+* Remove unnecessary import
+* Remove extract\_scene use of an All\_SCENES list
+* Remove Transform.\_\_str\_\_
+* Use ==/!= to compare str, bytes, and int literals
+* Heat equation scenes up to ShowPartialDerivativeSymbols
+* ContrastXChangesToTChanges
+* Make sure skipped wait calls use a longer dt
+* xt-plane to heat graph animations
+* Remove Transform(...).update(1) call from GraphScene
+* Finished TalkThrough1DHeatGraph
+* Added Mobject.match\_updaters
+* More animations for the heat equation
+* Changed arrow default max\_stroke\_width\_to\_length\_ratio
+* Added abbreviated names for number\_to\_point and point\_to\_number
+* half of 1d heat equation scene
+* Tiny changes to Clock
+* Moved increment\_value method to DecimalNumber
+* Move axis\_label method higher to general CoordinateSystems
+* More Fourier + Heat animations
+* Tiny formatting changes to drawings.py
+* Added default args for Line and Vector
+* Typo fix: remove redundant "the"
+* Updated README for Windows installation
+* FourierSeriesIntro
+* A few more Fourier circle animations
+* Use get\_family\_updaters to test if a mobject should be drawn during every frame of an animation
+* Hacky fix to Arrow scaling issue. There must be a better way to do this..
+* More Fourier circle scenes
+* Fix --preview on cygwin
+* A few more Fourier series scenes
+* Beginning heat equation animations, abstract fourier series circles scene implemented
+* Better behavior for turn\_animation\_into\_updater and cycle\_animations
+* Changes to AnimatedBoundary
+* Final changes before de chapter 1
+* Add supporter exception
+* Update README.md
+* Update README.md
+* add info to docker-compose file
+* add entrypoint to docker-compose.yml
+* change dockerfile entrypoint to /bin/bash
+* python3 -> python
+* move workdir from dockerfile to docker-compose.yml
+* remove network restriction
+* Pile of ode scenes made while editing
+* Temporary patch to a PiCreatureScene problem
+* Fixed ClockPassesTime animation
+* Fixed issue with numberline last tick vs. arrow conflict
+* Fixed tyop
+* Fixed typo
+* Pile of ODE scenes
+* Fixed problem with LaggedStartMap
+* Many more ode1 scenes and fixes as the video gets edited
+* Editing some div\_curl scenes I want to carry over
+* Fixed name conflict for AnimatedBoundary
+* Quick fix for LaggedStart kwargs confusion, but this needs a better long-term solution
+* More scenes for ode1
+* Up to 3 body problem illustration
+* ThreeDScene was still using continual animation constructs
+* Changed default for Interval numbering
+* Up to ShowHighVelocityCase in ode part 1
+* Up to IntroduceVectorField scene of ode chapter 1
+* Make BackgroundRectangle stroke\_opacity 0
+* Add options for bracket spacing in Matrix
+* Vector.scale was broken for vectors with length 0
+* Fix DrawBorderThenFill
+* VisualizeStates Scene
+* Ah, it turns out rate\_func placement in Animation is nuanced..
+* Small bug fix to NumberLine
+* Change default max\_stroke\_width\_to\_length\_ratio
+* Small bug fixes to NumberPlane
+* Up to the pont where phase space is introduced
+* Tex strings ending with 'dot' have a '{\quad}' added
+* Extend AnimatedBoundary to work on families
+* More ode animations
+* I don't like this fix, but TexMobjects were breaking if the 'dot' part was left isolated
+* VFadeInThenOut
+* AnimatedBoundary.  Perhaps a better name is in order, but this is meant to add a little visual interest to things like a framing rectangle
+* AnalyzePendulumForce
+* Fix bug with applying function to VectorizedPoint
+* Experimenting with applying rate\_func at the submobject level.  Admittedly, I haven't thought it through that much, but I suspect this will make things work better
+* AnalyzePendulumForce
+* DashedVMobject should handle case when num\_dashes=0
+* Beginning of BuildUpEquation scene
+* Add stroke opacity to VMobject.get\_style
+* Fix to Arrow styling
+* Remove unnecessary import
+* More ode part1 scenes
+* Add last tick to number line
+* Add DARKER\_GREY
+* More pendulum scenesw
+* Removed unneccesary import
+* fixed wait\_until for PiCreatureScene
+* Added missing import
+* Scenes to show mismatch between approximated pendulum and real
+* Bugfix for aligning null VMobjects
+* Bug fix for Bubble.pin\_to
+* Bugfix for PiCreatureScene
+* Added FadeInFromPoint
+* PendulumScene
+* Small addition for clarity
+* Small formatting changes
+* Have VMobject.set\_style return self
+* Remove unnecessary import
+* StreamLine test
+* Small changes to LinearTransformationScene
+* ode changes
+* Small changes to Cramer thunmbnail
+* Begin incorporating div\_curl vector field functionality into the main library
+* Working pendulum
+* Small animations for a talk
+* Start to implement a pendulum
+* Tweaks to Cramer's rule animations for video publication
+* Change lag\_ratio defaults
+* Fix change\_student\_modes
+* Fix get\_det\_text
+* Fix Laptop
+* Change how family is handled for VMobject.fade
+* Small renaming save\_image -> save\_final\_image, which is more honest
+* Fixed configuration of VectorSpaceScene
+* Revert "Update README.md"
+* Revert "Remove Something..."
+* Remove Something..
+* Fix Matrix
+* Update README.md
+* Fix to Matrix
+* Beginning ode project
+* fix get\_anchors for VMobjects
+* Fix position of labels on the y-axis
+* Fix alignment of minus sign to numbers
+* Fix the position of the y-axis label
+* Fix height setting in Ellipse initialization
+* Use upstream repo in docker instructions
+* Fixed CurvedArrow constructor by moving get\_length() to base class
+* Revert "Reverted Cleaned Up Arrow Implementation (commit d489b5df5c77...)"
+* don't write media\_dir
+* Fixed \`temp\_file\_path\` to be more specific in adding the "\_temp." string to file name (#458)
+* Reverted Cleaned Up Arrow Implementation (commit d489b5df5c77...)
+* Fixed SVG parsing error with consecutive C or M coordinates
+* Fix Ellipse constructor: 'width' is not defined
+* Tiny bug fix to old\_projects/clacks/question.py
+* Removed ContinualAnimation, reimplemented some of its occurances in the old\_projects, added warnings for the rest
+* Typo fix
+* Remove all support of ContinualAnimations from Scene
+* continual\_update -> update\_mobjects
+* Some preliminary changes to get rid of ContinualAnimation dependencies
+* Scaffolding for AmicableNumbers Scene
+* Added f\_always
+* Make it sound that Polygon.round\_corners leaves it with evenly distributed anchors
+* Remove make\_jagged
+* Added general get\_arc\_length to VMobject
+* Refactored make\_smooth and make\_jagged
+* add option to specify files directory
+* Fixed make\_jagged
+* Remove make\_jagged from Cube
+* Fix logo
+* Remove commented out Arrow tip\_length default
+* OldLaggedStart -> LaggedStartMap
+* Fixed NumberPlane
+* Added warning to usage of OldLaggedStart
+* Fixed OpeningManimExample
+* Fixed align\_to
+* Import the function "rotate\_vector"
+* Changed FadeInFrom default lag ratio
+* Added new LaggedStart default lag\_ratio
+* Change default FadeIn and FadeOut lag\_ratio
+* Change default lag\_ratio to something very small
+* Tiny line swap
+* Add an option to not display zero by default
+* Use null\_point\_align
+* Use Mobject.become instead of Transform.update(1)
+* Fixed NumberLine bug
+* Change restore implementation using become
+* Got rid of fade\_no\_recurse idea
+* Whoops, left a print statement
+* Change where Animation.begin is invoked
+* Fix some bugs with VMobject.align\_points
+* Indexing of TexMobject should be no different from other Mobjects
+* Changed how align\_submojects works, partly to be simply, partly to shift to using null mobjects instead of ocpies
+* Changed Transform.get\_all\_families\_zipped, since when target\_mobject doesn't have its data sligned, problems ensue
+* get\_all\_families\_zipped shouldn't be obligated to return list type
+* No flake8
+* Add F401,F403,F405 flake8 --select
+* Formatting fix
+* Fixed formatting error
+* Remove comment about ContinualAnimation
+* Fixed formatting issue
+* Slightly cleaner implementation of set\_cairo\_context\_path
+* Fixed small bug with Camera not properly transforming points
+* Got rid of ContinualUpdate
+* Get rid of ContinualUpdate and ContinualUpdateFromTimeFunc
+* Get rid of ContinuallyChangingDecimal
+* Remove from manimlib.continual\_animation.from\_animation
+* Remove CycleAnimation ContinualAnimation, replace with cycle\_animation which adds a mobject updater
+* Get rid of NormalAnimationAsContinualAnimation
+* Get rid of ContinualMovement, replace with always\_shift
+* Get rid of ContinualRotation
+* Added always\_shift and always\_rotate
+* Add always function, for mobject updating by a method
+* updating\_mobject\_from\_func -> always\_redraw
+* Rename updater.py to mobject\_update\_utils.py
+* Removed use of self.\_\_dict\_\_ in DecimalNumber
+* Removed unnecessary import
+* Minor cleanup to animation/update.py
+* Cleaned up specialized animations
+* Fixed car problems.  Regular mechanic over here
+* Cleaned up rotation.py
+* If about\_edge is None, default to ORIGIN
+* Cleaned up ChangingDecimal
+* Cleand up movement.py for new Animation structure
+* Finished updating indication animations
+* Updates to (some) indication animations
+* Use super
+* Bug fix to Succession; it wasn't initializing runtimes
+* Use super() in \_\_init\_\_ functions
+* Added Animation.get\_all\_mobjects\_to\_update
+* Moved ShrinkToCenter to transform, and made it a subclass of ScaleInPlace
+* Fixed bug with VMobject.align\_points
+* Reimplment growing animations based on new Animation structure
+* Minor clean up to imports
+* Tiny spacing change
+* Reimplemented fading animations based on new Animation structure
+* Added create\_starting\_mobject method, and suspend\_mobject\_updating config variable
+* FadeInAndShiftFromDirection -> FadeInFrom
+* Added Transform.create\_target to make implementation of subclasses cleaner
+* Created fading.py and growing.py to help break up animation.creation.py
+* Mild reorganization
+* Reimplemented DrawBorderThenFill
+* Small fixes to DrawBorderThenFill and Write
+* Small fixes to AnimationGroup and Succession
+* Cleaned up remainder of Transform animations
+* Get rid of lag\_factor
+* Changed implementation of TransformFromCopy
+* Rewrote DrawBorderThenFill to work with Succession
+* Fixed ApplyMethod to only create target once the begin method is called
+* Fixed Succession to work when animations share a mobject
+* Get rid of lagged\_start
+* Get rid of all\_at\_once
+* Get rid of one\_at\_a\_time
+* Reimplement Animation.get\_sub\_alpha based on lag\_ratio
+* Remove kwargs from begin\_animations
+* Get rid of ApplyToCenters
+* Make sure AnimationGroup works well with updating mobjects
+* LaggedStart -> OldLaggedStart
+* Completely reimplemented AnimationGroup to be way simpler and more robust
+* Slight change to imports and comments of animation
+* Factored out parts of Scene.play
+* Fixed Animation to work for updating mobjects
+* update\_submobject -> interpolate\_submobject
+* update\_mobject -> interpolate\_mobject for Animation, but not for ContinualAnimation
+* clean\_up -> clean\_up\_from\_scene
+* Get rid of instantiate function
+* Fixed Polygon.round\_corners bug
+* Remove Grid
+* Added round\_corners method to Polygon
+* Added adjacent\_n\_tuples function
+* Changed angle\_between\_vectors implementation to work for 3d vectors
+* Changed Rectangle implementation
+* Cleaned up Arrow implementation
+* Bug fix to put\_start\_and\_end\_on
+* Get rid of max\_stem\_width\_to\_tip\_width\_ratio
+* Getting rid of use\_rectangular\_stem for Arrow
+* Added VMobject.set\_opacity method
+* Cleaned up implementation of DashedLine
+* Added VMobject.get\_subcurve, and cleaned up implementation of DashedVMobject
+* dashed\_segment\_length -> dash\_length
+* dashed\_segment\_length -> dash\_length
+* dashed\_segment\_length -> dash\_length
+* Factored out Line.get\_start and Line.get\_end to be more general Mobject methods
+* Bug fix for VMobject.pointwise\_become\_partial
+* position\_endpoints\_on -> put\_start\_and\_end\_on
+* Cleaning up Line
+* Changed how NumberPlane faded\_line\_style is created
+* Clean up Sector classes
+* Few updates to Arc and Circle
+* Small changes to frames.py
+* Replaced merge\_config with merge\_dicts\_recursively
+* Updating coordinate system mobjects
+* Get rid of propagate\_style\_to\_family, since it is basically always true
+* Rewrote ParametricFunction to have less buggy interpolation
+* Whoops!  Previous fix had its own bug.  Now it's fixed
+* Fixed PiCreature pupil handling
+* Fix edge case for VMobject.get\_subpaths\_from\_points
+* Fixed error with how ScreenRectangle inherited from Rectangle
+* rate\_func can no longer be None, must be a function.  Use 'linear' instead of None
+* Coninuation of VMobject restructuring
+* Fixed bugs in partial\_bezier\_points and integer\_interpolate
+* Remove VMobject.add\_control\_points
+* Made Rectangle a Polygon
+* Removed VMobject.change\_anchor\_mode
+* Remove add\_control\_points, re-implement VMobject.align\_points
+* Changing the way VMobject handles its internal bezier curves so as to eliminate the need for sup\_paths
+* sort\_submobject -> sort and shuffle\_submobjects -> shuffle
+* print\_submobject\_family -> print\_family
+* arrange\_submobjects -> arrange
+* Fixed no animations bug
+* Change the check fo Special3DScene quality
+* Fix ThreeDAxes bug
+* Small changes to retired clacks project
+* Retire clacks to old\_projects
+* Final animations for the clacks solution
+* Unfinished changes to stage\_scenes.py
+* Call continual\_update at the start of a wait call, even if there are no time-dependent mobjects
+* Change to banner defaults
+* sheen -> sheen\_factor
+* Small changes to Mobject.upate
+* Remove commented out old implementation of put\_start\_and\_end\_on
+* DEFAULT\_FRAME\_DURATION -> DEFAULT\_FRAME\_RATE and change value to 60
+* frame\_duration -> frame\_rate
+* Update target mobject before Transform
+* Use deepcopy in Rotate
+* Remove unnecessary import
+* Update mobject at the start of an animation
+* Several more PositionPhaseSpaceScene scenes
+* Nix setup\_bases
+* Mobject should update when Mobject.resume\_updating is called
+* Changed default for TeacherStudentScene.student\_says
+* Further animations for clacks solution 2 project
+* Changed implementation of angle\_between
+* Changed what the gain argument of Scene.play means to instead actually apply gain to the passed in sound, not the background
+* Changed implementation of ShowPassingFlash to something that felt less confusing
+* Make LaggedStart adopt default rate\_func and run\_time of the animation it takes in
+* Suspend mobject updating during animations
+* Updates to light-bouncing clack solution
+* Added simple get\_parameters function
+* Made 0 a default value for DecimalNumber
+* Changed the way Mobject updaters are checked to be dependent on time
+* Setup for clacks solution2
+* Add inflection parameter to rush\_into and rush\_from
+* Added gain to Scene.add\_sound
+* Beginning clacks\_solution2 animations
+* Allow scene extraction from a special file which contains an ALL\_SCENE\_CLASSES list and an OUTPUT\_DIRECTORY.  This is part of a move to make the output file organization independent from the sourcecode organization
+* Use frame\_rate, instead of frame\_duration, and make that part of the camera rather than the scene
+* Small bug fix for starting\_animation\_number
+* Note on how sound aspect of BlocksAndWallScene was broken
+* partial\_movie\_directory -> partial\_movie\_files
+* Finished SceneFileWriter refactor
+* First pass at SceneFileWriter refactor
+* Added clacks\_names.py animatiosn
+* Changed how partial movie directory is found
+* Added banner scene
+* Final animations for first clacks solution video
+* Actually, stage scenes should deal in partial movie files by default
+* Slight changes to ShowTwoPopulations
+* Comment to complain about GraphScene and remind myself to re-factor or replace it
+* --output\_file\_name config shouldn't have nargs
+* Simpler animation config for ShowCreationThenFadeAround
+* Fixed GrowFromPoint
+* Fixed compile from file list issue
+* Fixed negative decimal issue
+* Leave in partial movie files
+* More clacks animations
+* Fixed ZeroDivisionError for Axes
+* Fixed a ZeroDivisionError when instantiating Axes
+* More clack animations
+* Add Circle.get\_point\_from\_angle, and arc\_center config variable for arc
+* Make default student the rightmost one
+* Fixed a problem where in zooming in, stroke widths all grew
+* Added ShowIncreasingSubsets
+* Latest clack additions, including two monster scenes
+* Added rudimentary sound abilities to scene
+* Make it okay to call Mobject.update without a change in time
+* 2\*np.pi -> TAU.  Because why not?
+* Clean up Axes.\_\_init\_\_ slightly
+* Added --leave\_progress\_bars option, with the deault being to remove them
+* Added ShowCreationThenFadeOut
+* updated the docker file to use fewer layers
+* CircleThenFadeAround -> ShowCreationThenFadeAround
+* Further progress on clacks solution
+* Added Scene.wait\_until and changed time\_progression defaults
+* Removed nargs from several bit of configuration
+* Added stop\_condition to Scene.wait
+* Replace backslash to slash only on windows platform
+* Only change backslash on windows
+* Fix file problem when combine videos on Windows
+* Fix the file problem when combine videos on Windows
+* Began clacks solution animations (just for the recap scenes, so mostly carried over from clacks)
+* Changed animation complete message
+* Cleaned up and added some documentation to config.py
+* Make it possible to render multiple scenes
+* Updates to logo object
+* A few added clack animations while editing
+* have get\_sorted\_integer\_files return list
+* Remove STAGED\_SCENES\_DIR
+* Best to keep the partial video outputs from cluttering things up too much
+* A few fixes to the last commit, making sure different file extensions don't mess with the system
+* Changed the way Scene write to videos, where it writes each play or wait call as a separate file, and later concatenates them together
+* Removed redundant import
+* Made sure to always encode written TeX files as UTF-8
+* More clack animations
+* Make sure smooth returns values only between 0 and 1
+* Small fix to DecimalNumber
+* Make Mobject.get\_critical\_point use get\_poitns\_defining\_boundary
+* Fixed stage\_scenes, which required updating get\_scene\_output\_directory and get\_module
+* Update README.md
+* First few animation of clacks, with many variants on the block/wall setup
+* Changed default behavior to have no finishing sound, and instead of passing in --no-sound to prevent the sound, one would pass in --sound to activate it
+* Added sound to collision animation
+* Moved uncertainty Flash animation into indication, and cleaned up for more general use
+* Most of BlocksAndWallScene is setup
+* Add increment function to Integer
+* Small fix to Mobject.fade\_to
+* Beginning clacks project
+* Make sure rotate\_vector works on 2d vectors
+* Added Scene.tear\_down in symmetry with Scene.setup
+* Changed default TexMobject.background\_stroke\_width to something less ugly in general
+* Tiny PEP fix
+* Added set\_style, get\_style, and improved match\_stlye
+* Added new opening example in example\_scenes.py
+* Added  to camera.py (#387)
+* allow rendering scenes from any directory (#391)
+* add option to suppress success/failure sound (#385)
+* Replace pip with python3 -m pip
+* Use os.openfile() on Windows and gitignore media folder (#384)
+* Use os.devnull instead of utils.tex\_file\_writing.get\_null(); also small typos that cause SyntaxError (#382)
+* print to stderr for scene not found
+* small typo corrected
+* fix imports, remove \_\_init\_\_.py files, some pep8 linting
+* Update mobject.py
+* restore three\_d\_scene and svgs
+* remove bad import
+* add error codes to exits
+* import importlib, start streaming mode upon import
+* support for inline scenes
+* move library code into manimlib, replace relative imports with absolute imports
+* Retired sphere\_area and for\_flammy
+* Changes to zeta
+* PatreonEndScreen improvements
+* ComplexValueTracker
+* add error codes to exits
+* import importlib, start streaming mode upon import
+* support for inline scenes
+* move library code into manimlib, replace relative imports with absolute imports
+* fix livestream flag
+* Update README.md and streaming config
+* Make manim into a module and refactor configuration
+* Remove creating media/ from instructions
+* replace exists() with isfile() and isdir()
+* automatically create MEDIA\_DIR
+* scale SVGMobject about origin
+* Change a word
+* add templates for issues and pull requests
+* revised fallback to plain pi creature, revise some latex, make once\_useful\_constructs into a package
+* First draft of SecondProof
+* Animations up to half of SecondProof
+* Added description of merge\_config
+* Use merge\_config
+* Added Elbow
+* Bug fix to camera\_center
+* Prefix the link to the documentation with https:// 
+* Animated up to LimitViewToCrossSection in sphere\_area
+* Tiny refactor to make ShowShadows easier to modify in subclasses
+* Complex functions applied to 3d objects should leave z coordiante unchanged
+* Refactored u\_value and v\_values of ParametricSurface
+* Redid SpecialThreeDScene low quality configuration
+* Update README.md
+* SVG single-factor scaling
+* Begining sphere\_area project
+* Moved SpecialThreeDScene out of quaternions into three\_d\_scene
+* Update matrix.py
+* Retire borsuk\_addition to old\_projects
+* Finished updated borsuk video
+* New thumbnail for wallis
+* Mobject.clear\_updaters now returns self
+* element\_to\_mobject\_config was not actually used in Matrix
+* Fixes to patron scroll
+* determinant mistype
+* Setup for borsuk\_addition animations
+* Move turbulence to old\_projects
+* Finished turbulence project
+* More turbulence animations
+* Delete whitespace spam on the end of the file
+* Several more turbulence animations
+* Fixed bug with Mobject family member updaters
+* Fix the idle\_stream()'s sleep duration and change the stream FPS to 30
+* Add automatic positioning for live streams
+* Update README.md
+* Add a stream lock and an idle state for stream to provide continuous frame flow
+* Fix streaming issues by migrating from mplayer to ffplay and add Twitch support
+* Add point to point streaming from ffmpeg to mplayer via TCP
+* Renamed ANIMATION\_DIR to VIDEO\_DIR, also replacing 'animations' with 'video' in the path
+* Turn live stream related configurations into constants
+* Return a Scene object from the creation of a Manim instance
+* Add is\_live\_streaming control flow to idle the scene generation pipe for interactive shell usage purpose
+* Add the top-level manim module and Manim class
+* Add a testing script
+* Tiny animation additions to quat3d
+* Fix video output directory bug
+* Fixes Dockerfile to delete requirements.txt
+* Rearranges Dockerfile
+* Revert "Consolidates apt package installations."
+* Removes superfluous delete command
+* Consolidates apt package installations
+* Removes superfluous packages
+* Latest shadows animations
+* Tiny bug fix
+* First few animations of shadows project
+* Use TAU.  Obviously
+* Fixed get\_points\_defining\_boundary for VMobjects
+* Fixed get\_boundary\_point and get\_points\_defining\_boundary
+* Fixed frame\_center bug
+* Moved updating\_mobject\_from\_func
+* Fixed link for Dockerfile consultation
+* Capitalization and test to see if Travis CI is turned on
+* Preliminary finish to quat3d preamble
+* Added line to acknowledge ephemeral container, and added Processing to list of alternative libraries
+* Removed vim from default Dockerfile after discussion with Devin Neal, deciding to have the Dockerfile represent bare requirements of manim
+* Updated file paths for Docker to reflect interactive environment
+* Modified README.md to reflect current purpose of Dockerfile
+* Added vim to Docker to allow for light file editing
+* Add a build status badge to README.md
+* EulerAnglesAndGimbal
+* Up to RotationMatrix in quat3d
+* Rename set\_color\_columns
+* use merge\_config for SpecialThreeDScene configuration
+* Use VMobject.set\_shade\_in\_3d in ThreeDAxes
+* angle\_axis\_from\_quaternion
+* Added get\_z\_index\_reference\_point
+* Add support for ctex
+* pip install --upgrade pip
+* Run free flake8 tests on all new code submissions
+* from utils.space\_ops import get\_norm
+* Explicit tuple required in comprehension in Python 3
+* Explicit tuple required in comprehension in Python 3
+* README.md: Ensure that Python 3 is used
+* begin quat3d animations
+* Fixed ImageMobject fade bug
+* Fixed TextMobject bug
+* Quaternion thumbnail edit
+* Small formating
+* updated some breaking scenes to python3
+* update Dockerfile for python 3
+* Fix typo in prob\_dist\_visuals.py
+* Update bayes.py
+* Update bayes\_footnote.py
+* Explicit tulle required in comprehension in Python 3
+* Bug fix to rotate\_vector
+* Finishing quaternion touches
+* Obviously vector rotation should be done with quaternion multiplication..
+* Make sure add\_fixed\_in\_frame\_mobjects adds mobjects to scene
+* Added the option to change color in extract scene. This edits the camera config in the same way as the resolution argument or transparency flag. Inputs can either be strings, 3 digit hex strings, or 6 digit hex strings. In a Unix terminal the hex strings will have to be prepended with a '\'
+* Final tweaks to quaternion animations...I hope
+* Added QuaternionHistory Scene
+* Fixed flashing 3d dot problem
+* Bug fix to svg reading
+* Quaternion animations up to Patron draft
+* Fixed Endscreen
+* Cube rotations, intro scenes and more
+* Cube rotations, intro scenes and more
+* Make sure normalize can take in a list
+* Tiny bug fix
+* Better Mobject.become
+* Reverse arrow rectangle orientation
+* Back to old way of z-indexing
+* Don't even try to display points with nan or infinity
+* Up to partial progress on HypersphereStereographicProjection
+* Make fall back value in normalize an optional thing
+* + for 0 in Decimal number
+* Change where z-sorting happens in 3d camera
+* Got rid of ValueTracker special cases in camera
+* Small fix to AnimationOnSurroundingRectangle
+* Finished(?) 3d stereographic projection animations
+* get\_winding\_number
+* VMobject.set\_shade\_in\_3d
+* ParametricSurface parts should remember their coordinates
+* Safer default for Mobject.apply\_matrix
+* Dumb perspective hack
+* Up to TwoDStereographicProjection in quaternions
+* Slowed down default ambient rotation rate
+* Slighty more efficient get\_location for VectorizedPoint
+* Fix to parametric surface
+* Added edge\_to\_fix to DecimalNumber
+* Mobject should update when an updater is added (by default at least)
+* Added option for projection type to ThreeDCamera
+* Bug fixes to ThreeDAxes
+* Camera shouldn't try to display ValueTrackers
+* three\_d\_utils
+* Removed unneeded import
+* Up to ShowRotationUnderStereographicProjection
+* Bug fix
+* More robust Mobject.become
+* Up to beginning of stereographic projection in quaternions
+* Temporary bug fix on DecimalNumber...not fully figured out
+* Use Integer class for NumberLine
+* Add copy\_submobjects option to Mobject.become
+* Bug fix to pi\_creature\_scene blinking
+* Improvements to Eyes
+* FadeInFromLarge
+* Small fix in fourier file
+* Beginning quaternion animations
+* Small fixes to Scene bugs
+* Fixed -0 issue with DecimalNumber
+* Added missing imports
+* Bug fix to Arrow
+* Bug fix to Axes
+* Different tex file default
+* Better ThreeDCamera.add\_fixed\_orientation\_mobjects
+* Formating fixes
+* Fix cube
+* Better behavior for when lines have shade\_in\_3d turned on
+* Fixed camera bugs
+* Implmented ThreeDScene.add\_fixed\_orientation\_mobjects and ThreeDScene.add\_fixed\_in\_frame\_mobjects
+* Better ThreeDVMobject implementation
+* Fixed bug with VMobject.close\_new\_points
+* Remaining submobject\_family -> get\_family
+* submobject\_family -> get\_family
+* init\_point -> reset\_points
+* Add family option to match\_style
+* Tiny formating change
+* Fixed bug associated with ThreeDVMobject
+* Numberline arrowhead should share strokewidth of numberline
+* Added Mobject.get\_pieces
+* Added better 3d axes
+* Remove z\_coordinate display ordering
+* Added linke to Todd Zimmerman's tutorial in README
+* Simple and small performance improvements
+* Performance improvements to 3d constructs
+* Fixed projection
+* TransformFromCopy
+* np.linalg.norm -> get\_norm
+* Added preliminary 3d animation abilities with (as of now poorly shaded) parametric curves
+* Reduced to a single tex\_template file
+* Disabled Ligatures for LaTeX files.  Why on earth are these ligatures the default?
+* Small change to logo generation
+* Bug fix to VMobject.set\_sheen
+* Make sure scene doesn't re-add animated submobjects that are already part of the scene via some other mobject
+* Make sure cairo transform accounts for frame center
+* ContinualUpdateFromFunc -> ContinualUpdate
+* Deleted mayavi\_test.py
+* Whoops, didn't mean to have the cairo\_test.py in there..
+* Added get\_complex\_formatter to Decimal
+* Typo fix
+* Updated README post python3 conversion
+* Updated example scenes
+* Update Decimal number changing
+* Fixed some ThreeDCamera bugs
+* Fixed (most) uses of cmp functions for sorting
+* Made Write a subclass of DrawBorderThenFill, as it should be
+* Fixed MovingCamera bug where frame was not updated properly
+* Added Mobject.update capabilties, which should be nicer and lighter weight than using ContinualUpdateFromFunc all the time.  Also changed the behavior of any Animation having its mobject automatically thrust up to the front of the screen
+* DEFAULT\_STROKE\_WIDTH in constants
+* DEFAULT\_POINT\_THICKNESS -> DEFAULT\_STROKE\_WIDTH
+* Random fixes to old\_projects
+* Make VFadeIn work on alpha of stroke
+* Random fixes to some old\_projects
+* Updated background\_colored\_vmobject displaying
+* Make sure that altering the tex template files will change tex\_hash
+* Further tweaking on PiCreature.look
+* Fixed some camera bugs
+* Fixed bugs assoiated with setting fill or stroke using None arguments
+* Made sure get\_boudary\_point uses self.get\_points\_defining\_boundary
+* Removed op
+* Removed itertools.ifilter use
+* Fixed PiCreature.look
+* Fixed bubble sort bug
+* Updated extract\_scene to use importlib
+* Bug fixes to new VMobject color model
+* Updated ThreeDCamera color methods
+* Prevent ned to create new cairo ImageSurface with each frame
+* Reimplented svg rendering using cairo, and changed vmobject color model to allow for gradeints and strokes with opacities.  Many errors associated with python 2 to python 3 conversion are likely still present at this point
+* After running 2to3
+* Enable specification of resolution from command line
+* Added Mobject.become method
+* Camera background is opacity 0 when -t is passed in, otherwise 1
+* Add background stroke width to mobjects
+* scale\_to\_fit\_width -> set\_width, likewise for height and depth
+* Move gradient and mvrc to old\_projects
+* Simple mvcr animations
+* Simple gradient worked example
+* Tried to address when half of a \begin{array}...\end{array} type tex string shows up as an argument to TexString
+* Small fixes to matrix.py
+* Initial gradient animations
+* Retired several projects into old\_projects folder
+* Bug fixes to logo generation
+* Finalized dandelin project
+* Added new logo
+* Cleaned up constants
+* Almost all animations for dandelin
+* Added FadeInFrom as alternate name for FadeInAndShiftFromDirection
+* Some supplementary animations for 3d scenes
+* Added textcomp package
+* Added introductory dandelin animations
+* Set up scene stubs for 3d animations
+* Change default to 2k
+* FLL Thumbnail
+* Preliminary end to lost\_lecture project
+* A few tweaks to lost\_lecture while editing it all together
+* Finishing changes to UseVelocityDiagramToDeduceCurve
+* UseVelocityDiagramToDeduceCurve
+* Finished ShowEqualAngleSlices
+* Further ShowEqualAngleSlices progress
+* Halfway through ShowEqualAngleSlices
+* Added Line.get\_unit\_vector
+* Scenes up to IntroduceShapeOfVelocities
+* Fixed small bug with FadeInAndShiftFromDirection
+* Up to AngularMomentumArgument
+* Added PI constant
+* Beginning KeplersSecondLaw scene
+* Fix small typos
+* Added FadeOutAndShift animation
+* Added (somewhat large) ProveEllipse scene
+* Added line\_intersection function
+* Style fix to exponential\_decay
+* Added Restore animation
+* Up to AskAboutInfiniteIntelligence in lost\_lecture
+* Up to AskAboutEllipses in lost\_lecture project
+* Opening animation to lost lecture
+* Beginning lost lecture project
+* Temporarily removing relative imports
+* Modernize Python 2 for Python 3
+* Minor changes and renaming
+* math is a good library to have without thinking, right?
+* I needed a this version of numpy to satisfy opencv
+* Update README.md, fix typo
+* Added simple featured creator wrapper animations
+* Refactored DecimalNumber to better use string formatting syntax
+* Added MortyPiCreatureScene and added kwargs to PiCreatureScene.look\_at
+* Added the strip command and removed unused security (that cannot be used)
+* End of div\_curl project
+* Up to most content in the end message
+* Added Mobject.shuffle\_submobjects
+* Tiny nudges for of div and curl
+* Fixed Camera.is\_in\_frame
+* DivCurlDotCross
+* Preditor prey scenes
+* Fixed default label direction for Axes y-axis
+* Up to initial preditor/prey animation
+* IntroduceCurl
+* Tiny formatting fixes
+* Added include\_sign to ChangingDecimal config
+* DivergenceAsNewFunction
+* DivergenceAtSlowFastPoint scene
+* Added include\_sign flag to DecimalNumber
+* Animations up to DefineDivergence of div\_curl
+* Small setup for possible shift to general camera implementation
+* Small clarification to description of batch\_by\_properties
+* div\_curl project up to ChangingElectricField
+* Drawing of earth
+* Quick fix to a bug where ImageMobjects of size zero weren't displayed
+* ElectricField scene
+* Opening scene of div\_curl
+* Factor out holomorphic project into two separate videos
+* Remove clamp function, redundant with np.clip
+* Pillow was giving some troubles with creating an image from an array while setting a mode
+* Whoops two students had the same quiz
+* Edit thumbnail
+* Use x\_y\_z
+* Modernize Python 2 code to get ready for Python 3 yet again
+* Give Decimal the same heirarchy as TexMobject
+* Edits for eop1 finalization
+* Beginning holomorphic project
+* Added complex\_func\_to\_R3\_func
+* Added is\_in\_frame method to camera
+* Added a way to easily customize the media directory
+* Revert "Merge branch 'master' of github.com:3b1b/manim into alt-calc"
+* Revert "End of Alt calc project"
+* Revert "Revert "Merge branch 'master' of github.com:3b1b/manim into alt-calc""
+* Revert "Merge branch 'master' of github.com:3b1b/manim into alt-calc"
+* End of Alt calc project
+* Final edits to alt\_calc video. Published
+* ZoomedScene display should have opaque background
+* Better fix to \left \right issue in TexMobject
+* Various little additions and tweaks while editing together video
+* Replaced use of SmoothedVectorizedHomotopy with ComplexHomotopy in ComplexTransformationScene
+* Fixed ComplexHomotopy
+* Initial complex transformation material, and some reworking of the phi example of alt\_cal
+* Whoops, turns out that clause was there for a good reason
+* AnalyzeFunctionWithTransformations
+* Replace all unbalanced \left \right text in TexMobject
+* Added PiCreature.get\_mode, along with other changes to keep it working
+* Setup for GraphOnePlusOneOverX
+* Up to ShowPhiAsFixedPoint in alt\_calc
+* reverted to earlier version
+* IntroduceContinuedFractionPuzzle
+* added\_anims for TeacherStudentScene.teacher\_holds\_up
+* Fixed bug for multipled braces being imbalanced
+* ChangingVectorField of alt\_calc
+* Added ContinualGrowValue
+* Added VFadeIn and VFadeOut
+* StartingCalc101 of alt\_calc
+* More zooming animations for x^2 example
+* Simply added self.stem attribute to Arrow
+* ZoomInOnXSquaredNearOne of alt-calc
+* IntroduceTransformationView
+* Finally got zoomed transformations the way I want them
+* Start tracking pixel\_height and pixel\_width instead of pixel\_shape, since all uses of it involved unpacking anyway, and the ordering makes it harder to read and edit
+* tweaking EoP Chapter 1 (Brick Row Scene finish confirmed?)
+* Refactoring how Camera frame height and width are handled
+* Refactoring and bug fixes to moving\_camera, multi\_camera, zoomed\_scene mix
+* This try loop was hiding some more legitimate import errors
+* Function mapping animations on NumberlineTransformationScene
+* Some bug fixes to ZoomedScene
+* tweaking and tweaking
+* Replaced background\_alpha with background\_opacity
+* Cleanup of ZoomedScene updates
+* Fixing various in ZoomedScene
+* Reimplemented ZoomedScene, using a new MultiCamera
+* typo
+* last tweaks for chapter 1
+* Reimplemented Camera.display\_image\_mobject
+* Basic infrastructure for NumberlineTransformationScene
+* Added ApplyPointwiseFunctionToCenter
+* zoom in on BrickRowScene
+* tweaked sequence shuffle
+* Fix to last commit
+* Better fix to Mobject.reduce\_across\_dimension
+* Revived utils/tex\_file\_writing.py
+* Up to StandardDerivativeVisual in alt\_calc
+* Improvements to TexMobject
+* Eliminate name ambiguity
+* PEP8 for graph\_scene.py
+* Changed how numbers are added to a number line
+* Added simple TODO
+* Update tex\_mobject.py
+* removed print call
+* shuffling through all sequences of 20 flips
+* working on EntireBrickWall
+* made BrickRowScene reusable for EntireBrickWall
+* make extract\_scene play nicer with Sublime build system
+* fixed bug for reduce\_across\_dimension for mobs with empty submobs
+* renamed num\_decimal\_points -> num\_decimal\_places
+* resolved conflicts…
+* showing 20th row in detail
+* added animation steps for brick wall
+* made brick row scene reusable for brick wall
+* fixed bug for reduce\_across\_dim for mobs with empty submobs
+* made extract\_scene play nice with Sublime build
+* Fixes and refactoring for TexMobject
+* flash through pi creature class working
+* finalized brick row scene
+* finished histogram morphs
+* trying (and failing) to get the pi creature to flash through the class
+* finished prob dist visuals
+* tweaks
+* visuals for "what is aprobability distribution"
+* extracted dice table
+* Small scoping on alt\_calc
+* Removed color default on TexMobject
+* Moved where stroke\_width attr is defined
+* Added/tweaked some indication animations
+* Made add\_background\_rectangle are more general method for all mobjects
+* finessing brick row scene, added weather forecast visual
+* Added tex\_to\_color\_map abilty to TexMobject config
+* Added substrings\_to\_isolate to TexMobject configuration
+* Beginning alt\_calc project
+* Changed defaults on PiCreatureScene
+* Small cleanup on TexMobject
+* Added break\_up\_string\_by\_terms
+* Refactor of TexMobject to separate out SingleStringTexMobject.  Should improve TexMobject transform animations
+* tweaking the 3rd coin flip
+* fixed imports in new EoP structure
+* reorganized files in EoP
+* outcome rects now white and no longer rounded, finished tweaks on 2nd flip, incl. finer levels of detail
+* Retired Wallis
+* tweaked coin flipping motion
+* added decimal tallies
+* tweaking intro scene
+* Improved there\_and\_back\_with\_pause
+* TeXMobject convenience subclass
+* bug in debugging method
+* Early version of ShowRowReduction
+* Fixed problem with output\_directory\_getters.py on new files
+* Start gauss
+* Cramer thumbnail
+* created chapter 0, tweaks
+* created chapter 0
+* End of Cramers
+* Small fix to det\_text scaling
+* added utils/output\_directory\_getters.py
+* Improved stage\_scenes and refactored get\_movie\_output\_directory methods
+* Preliminary end to Cramer animations
+* Filler for 3d animations
+* TransformingAreasYCoord and TransformingAreasXCoord
+* Improved treatment of unit square in LinearTransformationScene
+* Animated up to SolvingASystemWithOrthonormalMatrix
+* Improved VectorSpaceScene.get\_vector\_label
+* Added add\_background\_rectangle to Matrix
+* wrote quiz scene
+* bug fixes in Histogram
+* fixed unit color bug
+* Up to LookAtDotProducts in Cramer
+* Background rectangle for Matrix
+* add\_background\_rectangles -> add\_background\_rectangles\_to\_entries
+* More animations on Cramer
+* Histograms form brick rows can now automatically scale, expanded and tweaked brick wall scene
+* Animted up to SetupSimpleSystemOfEquations in cramer.py
+* Noted some problems with VectorspaceScene
+* Changed some matrix defaults
+* scaling of morphed histograms working
+* simplified brick row scene, made more generic; work on morphing into histogram for N = 20
+* brick row morphing into histogram
+* finished TS Scene
+* typos
+* Beginning of cramer
+* Upated Matrix mobject
+* started teacher student scene
+* animated brick wall up to the sum rule
+* End of Wallis project
+* Tiny formatting fix
+* Minor improvements to some common scenes
+* fixed centering issue
+* working on showing the relations btw successive rows
+* finished TS Scene
+* dice row now vertical, replaced coin toss with sick pi creatures
+* finished ShowUncertainty1 (die)
+* histogram positioned in origin by default
+* finished area model 3
+* fixed drawing bars of height 0
+* fix for labels in area model 2
+* quick fix for GraphScene
+* Fixes to ShowProduct
+* ShowProduct, NonCommunitingLimitsExample, and more
+* KeeperAndSailorForSineProduct and other scenes to finish out Walli
+* Made direction a direct arg of FadeInAndShiftFromDirection
+* finished area model scene 2 (normal dist)
+* now both integral bounds can move
+* tweaked first area model example
+* improvements on the brick wall scene
+* Finished KeeperAndSailor
+* progress on main animation (areas and tallies splitting and merging)
+* cleanup
+* moving code
+* cleanup
+* Partial progress through KeeperAndSailor
+* Tiny bug fix to Laptop
+* A few introductory scenes for Wallis
+* Small stylistic fix to how get\_smooth\_handle\_points is implemented
+* merged code from pascal.py
+* added more options for histograms
+* First half of KeeperAndSailor scene
+* Fixed BackgroundRectangle color behavior
+* Tiny formating change
+* Small bug-fix to DashedLine to ensure get\_end works right
+* A pretty map of S5
+* basic enumeration of permutations
+* ArmedWithTwoKeyFacts
+* Fixed TeacherStudentScene bug
+* putting things together in the intro scene
+* trying to improve the timing of the pi creature coin flip
+* 3rd example of uncertainty: coin flip
+* throwing darts
+* basic animation for dice working
+* expanded functionality of histograms, esp. for updating
+* ProveLemma2
+* Bug fix and PEP8 on svg\_mobject.py
+* Bug fix for length 0 Dashed line
+* Name animation script
+* DistanceProductIsChordF
+* Added GrowFromEdge
+* improvements on dice
+* new class RoundedRectangle and SVG support for it
+* working fixing SVG import issue (preprocessing fill and stroke)
+* introduced die faces
+* wrote a 3rd example for area model
+* expanded (and fixed) Histogram class
+* improved area model examples 1 and 2
+* colored triangle indicator in GraphScene
+* PlugObserverIntoPolynomial
+* added TexMobject.add\_background\_rectangle\_to\_parts
+* Removed specialized insert\_n\_anchor\_points for Line
+* Made coordinate\_labels an attribute of ComplexPlane
+* basic integral drawing working
+* moved integral drawing to GraphScene
+* Test graph scene
+* added central input sampling fro integrals
+* Small additions to Wallis
+* got code from EoC working (for the 2nd area model example)
+* added OpeningQuote, skeletal overview, 1st illustration of area model
+* fix for copy bug (again)
+* rearranged imports bc of GraphScene name conflict
+* import bug in SampleSpaceScene
+* Teacher in TeacherStudentScene can now be colored
+* added options to OpeningQuote scenes
+* FromGeometryToAlgebra
+* Removed confusing about\_point conditionals in Rotating
+* Added assertion that apply\_points\_function\_about\_point does not receive None for both the about\_point and about\_edge
+* Lemma1 and Lemma2 animations
+* Added warning to reconfigurable scene
+* Tree can unfold in both default and sorted mode, animating btw them does not yet work as intended
+* tweak to make the coin stacks more realistic
+* pretty little coin stacks and sequences
+* IntroduceDistanceProduct
+* Added default frame to MovingCamera
+* Began Wallis product animations
+* Added abbreviations for UP+RIGHT, UP+LEFT, DOWN+RIGHT, DOWN+LEFT
+* Small stylistic fixes to mobject.py
+* fixed pi creature color bug
+* First version
+* Update extract\_scene.py
+* Remove primes.py
+* Changed all files to (mostly) conform to PEP8
+* Changed several files to conform to PEP8
+* Added argparse requirement
+* Added apply\_matrix\_transformation to LinearTransformationScene
+* Deriminant puzzle solution animations
+* working branches in brick wall
+* added coins and tallies
+* workaround for CTEX bug
+* started Chapter 1 with a coin-flipping Randy
+* missing import in picreatures
+* fixed typo
+* Started on coin toss area model
+* first variants of generalized Pascal's Triangle
+* fixed and expanded GeneralizedPascalsTriangle
+* [PREVIEW] If one is under Linux, use the command 'xdg-open' to open the generated video
+* [CONFIG] Add opencv-python in requirements
+* Revert "added aggdraw-1.3 caveat to README"
+* added aggdraw-1.3 caveat to README
+* Tiny change to imports
+* added aggdraw-1.3 caveat to README
+* Revert "revert to earlier version"
+* revert to earlier version
+* Updated imports
+* experimental changes to old Pascal's triangle code
+* experimental changes to old Pascal's triangle code
+* updated eop imports
+* Setup determinant\_puzzle.py in eola2
+* geometry.py updates
+* Several import fixes
+* Factored probability and three\_d constructs out of topics/
+* Added missing colors to utils.color.py
+* Moved moved matrix.py to mobject, and pulled out MatrixMultiplicationScene
+* Moved topics/functions.py to mobject/, and moved topics/graph\_scene.py to scene
+* moved number\_line.py to mobject/
+* Factored out topics/complex\_numbers constructs to the appropriate places with mobject/, animation/ and scene/
+* Refactor topics/numerals into various numbers.py files in mobject/, animation/, and continual\_animation/
+* Added coordinate\_systems.py in mobject/ to house Axes, NumberPlane, ComplexPlane
+* Created for\_3b1b\_videos folder
+* Refactor many definitions out of topics and into folders within mobject
+* Poor mans merge
+* Moved many folders from topics/ to the new once\_useful\_constructs/
+* Pulled pi\_creature constructs out into their own folder, so as to note some distinction from the remainder of the library
+* Reorganized continual\_animation folder
+* Reorganized camera folder
+* Reorganized animations folder.  Warning: While I tried to be systematic, there is a decent chance this will cause import errors somewhere
+* Refactored helpers.py into a folder of various util files, take 3
+* Refactored helpers.py into a folder of various util files, take 2
+* Refactored helpers.py into a folder of various util files
+* Updated README.md
+* Create LICENSE
+* added big\_ol\_pile\_of\_manim\_imports.py (see the comment at the head of that file
+* Whoops, some files were missing from last commit
+* Rename radial\_gradient\_highlight to set\_colors\_by\_radial\_gradient
+* Renamed gradient\_highlight to set\_color\_by\_gradient
+* Renamed 'highlight' to 'set\_color'
+* Renamed DEFAULT\_HEIGHT to DEFAULT\_PIXEL\_HEIGHT
+* Changed camera implementation by renaming space\_shape to frame\_shape, where its height and width actually correspond to the camera's height and width
+* Rename SPACE\_X\_RADIUS to FRAME\_X\_RADIUS, and added constant FRAME\_WIDTH (likewise for all y-coordinate information)
+* Renamed SPACE\_WIDTH and SPACE\_HEIGHT to SPACE\_X\_RADIUS and SPACE\_Y\_RADIUS to be less confusing
+* added x labels
+* Retiring Winding numbers to old\_projects
+* Finishing touches to Winding
+* All final changes; the video is done, and it's time to commit and push these
+* Playing with Pascal
+* Fixed DoubleArrow Scaling
+* Incremental
+* histogram can be flashed through horizontally and vertically, linearly or at random
+* Tweaks to some final scenes
+* Small changes
+* Histogram can be flashed through linearly and randomly
+* Incremental
+* started histogram class
+* Incremental
+* ShowComplexNumber Scene
+* Incremental
+* End message animations
+* Tiny change to PatreonEndScreen
+* Changed default behavior of VMobject.set\_fill from setting opacity to 1 if nothing was specified and it started at 0
+* Tiny change
+* TransitionFromPathsToBoundaries
+* Small fix to TexMobject.add\_background\_rectangle
+* MonomialTerm
+* BFS now implemented on EquationSolver2d
+* EquationSolver2d restructure, en route to implementing BFS
+* Incremental
+* Added SearchSpacePerimeterVsArea
+* Added PathContainingZero scene
+* Removed default color of yellow for Arrow
+* Fixed import issue
+* Patron scroll
+* Slight changes to zeta implementation, along with SolveZeta Scene
+* Retired pi\_day script
+* Combined different pi day scripts
+* Finished pi day
+* No title on OutputPoints
+* added quotes
+* HeroAndVillain and EulerWrites628
+* Added numerical labels to 1d zero finder
+* Marginal additions
+* Simple ManyFormulas scene
+* Added ThreeLeggedPiCreature
+* PiTauDebate as opening scene of pi day script
+* Added TauCreatures
+* Marginal additions to WindingNumber\_G
+* cirlce constants animation
+* Primes animation
+* Sketched anim for Birthday Paradox
+* Added SearchForZerosInInputSpace (and other scenes)
+* Added FullScreenRect
+* Bug fix to change\_student\_modes
+* Incremental additions to WindingNumber\_G
+* Introduce1DFunctionCase and TransitionFromEquationSolverToZeroFinder
+* Incremental (the end of my messing with EquationSolver1d for time being)
+* Incremental
+* Pulled out InputOutputScene as a superclass for splitscreen situations
+* Added FailureOfComposition Scene
+* Added change\_all\_student\_modes method to TeacherStudentsScene
+* Moved probability to active projects
+* Created FadeInAndShiftFromDirection
+* Changed from animation.simple\_animation import \* to account for animation.compositions
+* Moved LaggedStart, AnimationGroup and Succession into their own file
+* Added match\_background\_image\_file
+* Makes is so PiCreatureScene PiCreature configuration happens in CONFIG, not by redefining create\_pi\_creature
+* Additions to DotsHoppingToColor
+* Added DotsHoppingToColor
+* Created WindingNumber\_G.py for some added animations
+* Some additions to TeacherStudentScene
+* Changed output directories (again) so that different resolutions go to different subdirectories
+* Added sort\_submobjects\_alphabetically to TexMobject
+* Incremental
+* Incremental
+* Change redered filed directory names
+* Revert "Add 3D graphing via square approximation."
+* Poor man's merge
+* Retiring basel animations to old\_projects
+* Add warning about light\_source
+* Changed thumbnail lighthouse brightness
+* Improve readability of three\_dimensions
+* Incremental
+* Add 3D graphing via square approximation
+* Randomize patron names
+* Finished Basel project
+* Fixed typo/grammer in readme
+* Fixed fade to behave over Groups of objects exactly as over the subobjects individually
+* tweaking PondScene, added RightAngleOverlay
+* Many additions while editing video together
+* Makes Patron names show up lower to start
+* Incremental
+* Added match\_interpolate function to interpolate and inverse\_interpolate
+* Synced the display of cComplexPlanes to the way NumberPlanes display. However, the code should further be merged at some point
+* PondScene, created InfiniteCircleScene
+* even more tweaking, added ThumbnailScene
+* Tweaks to IPTScene
+* IPTScene in basel2
+* Simpler move\_lighthouse\_to
+* Finished TwoLightSourcesScene
+* tweaked PondScene and FinalSumManipulationScene
+* Added ManipulateLightsourceSetups
+* Finished InverseSquareLaw scene
+* Fixed(?) Spotlight.update\_sectors
+* Added Mobject.stretch\_to\_fit\_depth
+* removed return
+* tweaking PondScene
+* resolved conflicts
+* Changed order of args in paths searched for svg files
+* Up to EarthScene of basel2
+* Changed mobject of ScreenTracker
+* Really dumb copy-pasting of extract\_scene.py and scene.py from master to get what I want.  Not sure what's going on here
+* Finished FirstLighthouseScene
+* Enabled coloring of the point in a GrowFromPoint animation
+* Finished MathematicalWebOfConnections scene
+* Reverted basel.py to original pre-grant state
+* Changes to basel, and replication of the file
+* Incremental WindingNumber changes (and hopefully fixes to merge snafu now removed frmo history)
+* microedits (not yet working)
+* Added edits to intro scene
+* Minor fix to camera.py, making SplitScreenCameras work again after some change to background handling made them crash
+* Satisfying finicky spacing desires
+* Moving uncertainty and fourier to old\_projects
+* microedits
+* Finished uncertainty project
+* Fixed typo
+* Full HangingWeightsScene scene
+* Doesn't count PiCreatureScene blinks as animations (that are counted up for -n purposes)
+* Adds MovingCameraScene
+* Adds inverting for ImageMobjects
+* finished IntroScene tweaks
+* curved arcs can now handle negative angles
+* classes ArcBetweenPoints, CurvedArrow, CurvedDoubleArrow
+* finished sum manipulation scene
+* Incremental
+* working on final scene
+* added synonym for number line labels
+* Incremental
+* Fixes small run\_time and added some warnings to Succession
+* Finalized PondScene (save overlays), working on final scenes
+* rewriting PondScene with ThreeDCamera
+* Incremental
+* Allowed color arg to be interpreted as setting fill\_color in TexMobjects
+* Fixed small bug in Arc, where end and start were swapped in adding tips
+* Finished AmbiguityInLongEchos
+* 3/4 of AmbiguityInLongEchos in uncertainty
+* Gives fourier graphs created with FFT and underlying function attribute
+* day's work
+* incremental changes in basel
+* uncertainty progress
+* Half of AmbiguityInLongEchos
+* Fixed bits of funny behavior with skip\_animations
+* Incremental
+* Fixed one-off error for number of frames rendered during an animation, and made it so that a final frame is always rendered after the construct method is called
+* Made .mov and .mp4 codec arguments analogous
+* Fixed deepcopy segfault issue with Camera
+* working on getting the pond's LS to scale correctly
+* resolved conflict
+* Enabling transparent background of exported videos
+* Fixed division by zero bug in alpha compositing
+* added ArcHighLighterOverlayScene
+* ..
+* Small uncertainty progress
+* Removed super-over-DRY implementation of style propagation in vmobjects
+* Use generate\_target in method compiling of scene.play
+* Fixed bug where nested AnimationGroups did not propagate configs correctly
+* Minor comment changes and clean up
+* 3D anims of LightSource fixed (everything faces the camera again)
+* Pond now smoothly morphs into a number line
+* ScreenScalingScene
+* Fixed how continual animations are handeled when skip\_animations is set
+* Removed sync\_animation\_run\_times\_and\_rate\_funcs, and changed the implementaiton of Scene.play and AnimationGroup so as to not change the run\_time and rate\_func of the animations passed in
+* Incremental
+* More intuitive behavior when explicit filenames are provided with extensions
+* Fixed Succession bug which had resulted in incompletely drawn subanimations
+* Uncertainty progress
+* Revert "edits that broke light.py"
+* Revert "Lighthouse now also stable under camera rotations"
+* Revert "Ambient light now also stable under camera rotations"
+* edits that broke light.py
+* incremental progress
+* Ambient light now also stable under camera rotations
+* Lighthouse now also stable under camera rotations
+* Further progress in IntroduceDopplerRadar
+* Uncertainty progress
+* Fixed display of vmobjects with a background color array, and sped up overlay\_rgba by a bit
+* Changed return type of batch\_by\_property
+* Refactor of capture\_mobjects to be cleaner about batching
+* cleanup in ScreenShapingScene, in prep for 3D scene
+* tweaking the zoomed IPTScene1
+* Manim depends on Python 2.7 and is not yet compatible with Python 3
+* tweaked IPTScene1, wrote IPTScene2 (inset formula)
+* tweaking IPTScene1
+* Uncertainty progress
+* Finished LongAndShortSignalsInWindingMachine in uncertainty project
+* Finished FourierRecapScene in uncertainty
+* Added binary search solution to case where input\_to\_graph\_point doesn't take in a graph
+* Switched WindingNumber to use np.linspace; also, fixed missing colon in extract\_scene.py
+* Removed range\_via\_num\_steps, which was redundant on top of np.linspace
+* Incremental
+* Added CircleIndicate animation
+* extract\_scene now behaves more as expected when passed explicit output file names already containing an extension
+* more tweaks in PondScene
+* Incremental
+* Tweaking the PondScene
+* VariousMusicalNotes in uncertainty project
+* Added clipping to get\_stroke\_rgb and get\_fill\_rgb for cases when interpolation of colors accidentally goes outisde this range
+* Added case\_sensitive option to highlight\_by\_tex
+* Working on making the PondScene construction iterable
+* Three iterations animated
+* Further uncertainty progress
+* Moved Car code out of eoc/chapter2
+* Incremental
+* Small uncertainty additions
+* ThreeDMobject color fix
+* Working on PondScene
+* Implmented doppler radar pluse for uncertainty
+* Made naming by quality optional
+* Fidgeting with the little screens
+* Beginning of ShowPlan in Uncertainty
+* Tie the render quality of a scene to its name so that files don't overwrite each other
+* Incremental
+* Feature: argument coor\_mask for move\_to / next\_to:   setting coor\_mask = X\_AXIS or Y\_AXIS makes the alignment in just one coordinate
+* SVG transforms hopefully finally handled properly
+* add requirements for BraceLabel
+* Cleanup from last changes
+* Refactored for meaningful speedup in background colored vmobjects
+* Added batch\_by\_property
+* Refactor of background coloring vmobjects, should be faster this way
+* uncertainty progress
+* Better convention for -n flag
+* Enabled adding end animation number with -n flag
+* Tiny changes
+* Updated ThreeDCamera methods for new color scheme
+* Direct computation of color hex to speed things up
+* Sped up get\_pathstring of camera
+* Minor refactoring to the camera class, with an additional change to z-buffering default behavior
+* Implemented FourierTradeoff in uncertainty.py
+* typo
+* minor edit in IPTScene1
+* Fixed shadow issue
+* Opening scene of Uncertainty project
+* Added floobits files to gitignore
+* Wrote main scene on IPT
+* fixed issue with finding the angles of left-oriented spotlights
+* changes to how the sectors are redrawn
+* Finished unpolished TwoLightSourcesScene
+* TwoLightSourcesScene: Hooked up indicator so it updates as replacement light moves around
+* Finished unpolished BackToEulerSumScene
+* ignoring PyCharm's config files
+* bug fixes
+* movement of indicators in BackToEulerSumScene
+* Unified display location (but not yet the code behind) labels in NumberPlane and ComplexPlane
+* Bug fix to Line.insert\_n\_anchor\_points
+* Tiny changes to mobject
+* Added print\_mobject\_family
+* Tiny cosmetic changes to transform
+* fixed spacing issue in BackToEulerSumScene
+* incremental progress
+* bug fixes in light. Finally working again!
+* added getter and setter for VectorizedPoint's location
+* bug fix session with Grant
+* Incremental
+* Added some notes to light.py
+* Minor changes everywhere, incremental progress on WindingNumber
+* Going back and forth on how I want objects to be ordered in the 3d camera
+* Make remove\_list\_redundancies keep last-most occurance of an element rather than the first occurance
+* Added DEGREES to constants
+* Make z\_buff\_func only round to the hundredths place, so small variations in z-coordiante not intended for z indexing don't mess things up
+* debugged existing scenes, working on BackToEulerSum
+* [3D CAMERA] Add parameter to set the camera position
+* [3D CAMERA] Add an example 'Rotation3d' to see the feature
+* [3D CAMERA] New feature: give the possibility to change the center of rotation
+* removed playground to get it ignored
+* added get\_cartesian\_coords
+* extracted LightSource code into topics file
+* fixed copying problem in animation
+* added angle\_between\_vectors, project\_along\_vector
+* Added example 3D scene
+* Transmitted changes from lighthouse
+* Minor comments reworded/added
+* Added BackgroundColoredVMobject
+* Incremental progress on WindingNumber, including adding helpful functions to helpers.py and number\_line.py
+* Bug fixes on set\_background\_from\_func (now computes screen dimensions correctly)
+* Successions now correctly handle having zero animations
+* Improvements to camera.set\_background\_from\_func, and incremental progress on WindingNumber
+* [3D CAMERA] BUGFIX: take into account the camera distance in get\_view\_transformation\_matrix()
+* [HELPER] Add a color helper function
+* Incremental
+* Fixed bug in set\_background\_by\_color\_function
+* Incremental progress
+* Added set\_background\_by\_color\_function to camera
+* Tiny cleanup
+* Bug fixes to 3d display
+* Incremental progress
+* Small improvements
+* Minor improvements to some details of Successor implementation
+* Minor cleanup
+* Some convenient utility functions added to helpers.py, which I had reason to make use of previously
+* Incremental progress on WindingNumber
+* Removed stray diagnostic print statements that had been left in
+* Whoops, forgot to actually add Container files to last commit, but this is the purely virtual Container class from which MObject and Scene now derive
+* Fixed bugs in Succession and AnimationGroup, and also created purely virtual Container class from which both Scene and MObject derive (conceptually unifying their remove/add methods)
+* Fixed numerals merge issue
+* Fixed alignment of Decimal unit
+* Revert "Added my playground files (for syncing btw my machines)"
+* Added my playground files (for syncing btw my machines)
+* refactoring scenes 2-5, started on scene 6 (faux 3D)
+* Resolve undefined names
+* Small adjustments to VMobject.insert\_n\_anchor\_points
+* Final touches to Fourier Thumbnail
+* Specify Python version
+* Feature: Scene.wait\_to(time) Can be useful for audio fitting, ignored in preview
+* Feature: DashedMObject
+* clean\_up for AnimationGroup
+* Feature: BraceLabel, BraceText -- Packed brace with its label + several useful methods
+* Feature: fine-tuned VGroup: allowing (nested) tuples or lists in constructor VGroup([a,b,c]) = VGroup(a,b,c) VGroup([a,b], c) = VGroup(VGroup(a,b), c) ..
+* Bugfix: VMobject.pointwise\_become\_partial did not worked properly when 0<a, b<1 and they are on the same curve
+* Feature: SVGMobject("unpack\_groups" = False) preserve the hierarchy of groups in the file
+* svg can handle ellipse
+* bugfix: svg handling
+* Added Ellipse
+* Scenes 2-5 mostly finished
+* added scene 5, but shd be done w light indicators instead
+* playing with lights
+* Added working light, scenes 3 and 4
+* added method for setting path arc of a Line
+* old Integer implem lingering around
+* Revert "Added my playground for syncing btw my machines"
+* Reorganized file structure of Camera module
+* Finished fourier project
+* cleanup
+* Incremental progress on WindingNumber
+* Added my playground
+* Added my playground for syncing btw my machines
+* Revert "Added my playground files (for syncing btw my machines)"
+* Added my playground files (for syncing btw my machines)
+* gitignore
+* Preliminary end to fourier project
+* Updated stage\_scenes to write to a directory unique to the animation file
+* Added kwargs to match\_width, etc. methods
+* Bug fix to PiCreatureScene handling bubbles
+* Annulus: symmetrized code
+* Trying to make light cones update correctly
+* Up to BoundsAtInfinity in fourier
+* Finished ScaleUpCenterOfMass of fourier
+* A few bits of cleanup
+* Incremental progress on WindingNumber
+* Removed UnsyncedParallel, which I realized was just reimplementing the functionality of AnimationGroup (and erroneously); I had misinterpreted the nature of the 'squish'ing in AnimationGroup
+* Fixed bug with MappingCamera set to allow\_object\_intrusion
+* Scaffolding for ScaleUpCenterOfMass scene in fourier
+* Made slicing into mobjects return a Group or VGroup instead of a list
+* Resolved conflicts in
+* Not my changes, but I have to commit them?!
+* Finished WriteComplexExponentialExpression of fourier
+* Added background rectangle to DecimalNumber
+* Removed axes config from Rotating animation
+* Further fourier work
+* Extended DecimalNumber to handles complex numbers and background rectangles
+* Improved VMobject.match\_style method to handle submobjects in a smarter way
+* Extended Mobject.align\_to to handle aligning centers of mobjects
+* Lingering typo
+* Final merge conflict cleanup
+* Whoops, some lingering changes that should have been in last commit
+* Resolved a few merge conflicts
+* resolved merge conflicts (#85)
+* Began setup of WhiteComplexExponentialExpression in fourier
+* Added ability to give a unit to a decimal, and changing decimal
+* Slightly improved match\_style in vmobject, but it's styll suboptimal
+* Added initial\_config to digest\_config, so that there is a way to recall how a mobject/animation/scene was initialized
+* Added units to DecimalNumer
+* Scoped out WhiteComplexExponentialExpression of fourier
+* Added simple R3\_to\_complex function
+* Arcs can now have arrows on both sides
+* Arcs can now have tips on either side
+* Added methods for centering Arcs and Sectors and for their stop\_angle
+* Improved first lighthouse scene (now with series on top)
+* Renaming
+* rotate\_in\_place changes
+* Added a few base layer animation for end message of fourier
+* A few improvements on TexMobject
+* Began FilterOutHighPitch in fourier
+* Changed configuration setup for Broadcast
+* Added error message to indicate people should change MEDIA\_DIR
+* Reworked default π creature's kwargs
+* Light screen and shadows
+* Added more to ShowCommutativeDiagram
+* Added match\_style\_data method
+* Finished ShowCommutativeDiagram of fourier
+* Setup position on ShowCommutativeDiagram
+* Further fourier progress
+* Typo fix
+* Added matching functions
+* Changed README and example\_scenes for updated instructions on usage
+* Further incremental fourier work
+* Fixed bug with how Brace gets created
+* More Fourier progress
+* Addressed places which depended on rotate being about the origin
+* Bug fix to ApplyMethod treatment of method kwargs
+* Updated the scale\_to\_fit Mobject methods based on new about\_point and about\_edge convention
+* When calling Scene.play on a method followed by its args, if you end the list with a dict, it will interpret it as the kwargs of the method
+* A few small fixes to new about\_point behavior
+* Editing ApplyMethod so that if the last arg is a dict, it's treated as kwargs for the method
+* Initial edits to make main movement methods take in about\_point and about\_edge kwargs
+* Small bug fix to foreground mobject behavior during an animation
+* Fixed bug with creating image directories
+* Finished DrawFrequencyPlot of Fourier
+* Update extract\_scene.py args to better support previewing, showing in finder, opening output files, etc
+* Corrected get\_arc\_center()
+* Incremental progress on WindingNumber (equation solver 2d)
+* Further fixes to Succession animations
+* Fixed ContinualUpdateFromFunc issue
+* Incremental progress on WindingNumber
+* Bug fixes to implementation of Succession animations
+* Further fourier work
+* Enable -n command on extract\_scene.py to skip to a given animation in a scene
+* Further Fourier progress
+* Fixed the bug with negative 0 displaying
+* Incremental fourier work
+* Improved how functions are drawn
+* Fixed bug associated with continual\_animations being removed accidentally
+* Used np.clip in Animation.update
+* Progress on Basel problem
+* Added WiggleOutThenIn to simple\_animations
+* Further fourier progress
+* Incremental progress on WindingNumber
+* missing self
+* Fixed how NumberLine leftmost\_tick is chosen
+* Further development on FourierMachineScene
+* Slight bug fix for behavior when scene adds mobject followed by a group containing that mobject
+* Incremental WindingNumber progress
+* Added a clamp function
+* Minor cleanups
+* Fixed ChangingDecimal bug based on new scene+mobject structure
+* Removed separate\_moving\_and\_static from scenes in place of cleaner get\_moving\_mobjects approach
+* Handled trickiness of removing mobjects from scenes
+* Most of the restructuring for how scenes hold mobjects is done, just need to handle the trickiness of Scene.remove
+* Changed how functions are applied to vectorized mobjects to handle smoothness issues more cleanly
+* working on basel
+* Tiny rename in camera
+* Made ORIGIN default center of PointDotMobject
+* Improved Arc, and added Sector
+* Added
+* Initial progress of DrawFrequencyPlot in fourier.py
+* Behavior of stroke\_width for point\_cloud mobjects now fills out a bigger block of pixels
+* Improved gradient\_hightlight of PointCloudMobject
+* Changed default Mobject.scale behavior to scale about center of mobject.  Also added easier functionality for scaling about the mobject's edge.  This will very likely break certain functionality in any old projects that expect scale to scale about ORIGIN by default
+* Finished WrapCosineGraphAroundCircle of Fourier
+* Slight change to example\_scene.py
+* Tiny changes to mobject.py
+* Added submobject\_to\_align and index\_of\_submobject\_to\_align to next\_to, removing align\_using\_submobjects boolean
+* Incremental progress on WIndingNumber
+* Added MultiCamera and SplitScreenCamera
+* Changed name ChangingDecimalToValue to ChangeDecimalToValue
+* Added ChangingDecimalToValue to numerals
+* Moved nn/ to old\_projects
+* double drawing of elongated ticks fixed
+* Began scaffolding for FourierMachineScene in fourier.py
+* Added some more functionality to Axes
+* Added TAU constant
+* Finally changed dither to wait
+* Tiny changes to example\_scene
+* Finally changed  to
+* Removed requested.txt
+* Remove ports stuff from Ben's merge
+* A few changes during Fourier project
+* Added sox requirement
+* typo changes
+* BreakApartSum and UnmixMixedPaint from fourier project
+* Fixed get\_merged\_array bug
+* Made it easier to configure axes in Axes mobject
+* Finished AddingPureFrequencies in fourier project
+* Bug fix to how Succession behave when Scene.play changes its runtime
+* Further additions to AddingPureFrequencies Scene of Fourier
+* Small bug fix
+* Added various svg files to files directory (not usually where they live) so anyone outisde 3b1b wanting to download the code and try it out won't see it break on all pi creature scenes
+* Changed the defaults for where animations are written, and where images for ImageMobject and SVGMobject are sought after
+* Improved behavior of Axes.get\_graph
+* Update extract\_scene for better argument parsing
+* Began Fourier project animations
+* Added Broadcast to objects.py, though it's unclear where it should go
+* Added coords\_to\_point and get\_graph to Axes
+* Bug fix to VMobject.fade
+* Incremental progress on animations for Winding Number video
+* Moved Broadcast to simple\_animations
+* Added MappingCamera
+* Minor comments added to continual\_animation.py
+* Mostly finished Winding Number loop decomposition animation
+* Work in progress on building up WindingNumber animations
+* Added Surround method to MObject, as well as special-case implementation of it to Circle
+* Bug fix on CycleAnimation
+* Fixed Succession animation, while changing its syntax a bit
+* Added CycleAnimation (which turns Animations into ContinualAnimations through unending repetition)
+* Cleaned up duplicate entry for MoveAlongPath in simple\_animations
+* Began a project for the winding number video
+* Modified behavior of ChangingDecimal so that labels keep track of displacement from tracked\_mobject
+* Fixed zoomed\_scene bug
+* New MOVIE\_DIR name
+* Added point\_to\_coords method to graph\_scene. Also, modified MOVIE\_DIR in constants.py
+* Fixed ffmpeg writing issue
+* [CONST] Use makedirs() instead of mkdir()
+* Moved mug.py to old\_projects
+* End of mug project
+* Ability to export PNG sequence
+* Beginning mug project
+* Added NormalAnimationAsContinualAnimation
+* 3D Hilbert Curve Implemented
+* End of combinations projects
+* Preliminary end to eop/combinations animations
+* NineChooseFourExample of eop/combinations
+* A few simple animations for Q&A round 2 video
+* Refactor of confetti
+* HowToComputeNChooseK of eop/combinations
+* HowToComputeNChooseK in eop/combinations
+* Moving putnam.py to old\_projects
+* Quick messy scene for analyzing dominos
+* putnam video published
+* New Endscreen
+* Seed randomness by default
+* Preliminary end to animations of putnam.py
+* RevisitTwoDCase of putnam.py
+* More progress in putnam.py
+* Nice to be able to have a random seed in the configuration of Scenes
+* Partial completion of ChooseThreeFromFive in eop/combination after rewrite
+* InitialFiveChooseThreeExample of eop/combinations
+* Rewrite of eop/combinations intro
+* Further eop/combinations progress
+* PascalsTriangle in eop/combinations
+* Corrected partial\_bezier\_points
+* BuildFiveFromFour of eop/combinations
+* Beginning combinations video
+* Playing with domino data
+* Finished nn/part3
+* Change patreon thanks default
+* Many tweaks upon editing the video
+* Finished GeneralFormulas of nn/part3
+* Beginning GeneralFormulas of nn/part3
+* Change default Write run\_time
+* Finished SimplestNetworkExample in nn/part3
+* Up through chain rule in SimplestNetworkExample of nn/part3
+* Arrow bug fix
+* Up to derivatives in SimplestNetworkExample of nn/part3
+* Up to derivatives in         self.revert\_to\_original\_skipping\_status()
+* Small fix so curved arrows look better
+* Further SimplestNetworkExample practice
+* First few methods of SimplestNetworkExample
+* Removed condition from Mobject.highlight
+* ChangingDecimal should default to its mobjects number of decimal points
+* Just setting up the long SimplestNetworkExample
+* OrganizeDataIntoMiniBatches in nn/part3
+* Finished WalkThroughTwoExample in nn/part3
+* There's some (as of yet unresolved) bug associated with fill colors when they become negative during an animation
+* More WalkThroughTwoExample progress in nn/part3
+* Remove cleanup redundancy
+* Partial progress through long WalkThroughTwoExample scene in nn/part3
+* A few scene bug fixes
+* Slight alterations and bug fixes
+* added cleanup to ShowCreationThenDestruction
+* ShowAveragingCost of nn/part3
+* Refactor of layer activations in nn
+* GetLostInNotation in nn/part3
+* InterpretGradientComponents in nn/part3
+* Tweaks to GradientNudging in nn/part2
+* set\_variables\_as\_attrs method on Scene
+* Change default frame rate back to 60fps
+* Beginning backpropagation animations
+* Make initial animation of GradientNudging a bit cleaner
+* Introduced BulletedList
+* part2 video published
+* Slightly cleaner treatment of pi creature automatically tracking animations
+* setup\_bases for scenes that subclass multiple other scenes
+* Error message for finding image paths
+*         self.revert\_to\_original\_skipping\_status()
+* Up to InterpretFirstWeightMatrixRows in NN part 2
+* SingleVariableCostFunction in nn/part2
+* NumberLine.apply\_function bug fix
+* Bubble files
+* Change "print " lines to "print(" lines
+* NN Part 1 published
+* Fixed Mobject.copy to be more efficient and fault taulerent
+* Further nn/part2 progress
+* Preview back propogation scene tweaked to my liking
+* Beginning part2 of nn project
+* Finished draft of part1
+* Up to weight matrix introduction of nn
+* nn progress up to introduction of weights and biases
+* About to describe weights in NN
+* Up to SecondLayerIsLittleEdgeLayer in nn
+* Up to breaking up patterns in nn
+* Added support for Chinese and Japanese characters
+* Small bugfix on text\_template.tex
+* Improved stability for Windows NT OS
+* Beginning nn project
+* Switched to rgba standard.  Quite possibly this will mess something up :)
+* Rudimenary ImageMobject
+* Retiring bells and waves files to old\_projects folder
+* ThreeFilters of waves
+* Smattering of Bell and Wave work
+* Further Bell fixes
+* Small fixes to waves.py
+* Up to CircularlyPolarizedLight in waves
+* Finished ShowVectorEquation of waves.py
+* Partial progress to ShowVectorEquation in waves
+* Second preliminary end to bell animations
+* Up to ForgetPreviousActions of Henry fixes
+* More bell fixes
+* Bug fix to MoreFiltersMoreLight
+* Fun hacky solution to MoreFiltersMoreLight scene
+* Beginning waves video animations
+* Fixed constants
+* Preliminary end to Bell animations
+* reworked ShowVariousFilterPairs in bells
+* Further Bell's progress
+* Whoops, didn't mean to change those constants
+* Arrow normal direction bug fix
+* Fixed some issues with how EM waves worked.  Quite possibly a few remain
+* Up to Venn Diagrams of Bell's project
+* First wave animations for Bell's project
+* Changing order to points of Arrow rectangle makes for better behavior with ShowCreation
+* Some of the initial playground set up for E&M waves
+* Better ambient camera movements for ThreeDScenes
+* Better 3d axes
+* Arrows really should be filled, not stroked
+* Simple 3D axes
+* Fixed Line.put\_start\_and\_end\_on
+* apply\_matrix for Mobject
+* Able to move camera around for 3d scenes
+* Further improvements to initial ContinualAnimations
+* Fixes to ContinualAnimation
+* Beginning Bell's and Waves projects
+* Created ContinualAnimation
+* highD moved to old projects
+* Remove stray backtick: \`
+* Add missing close bracket: }
+* Add missing colon (:)
+* import NumberLine, Point, Transform
+* import numpy as np
+* Preliminary end to highD project
+* Up to 10D example in highD
+* Added align\_to method to Mobject
+* Partial completion of TwoDBoxWithSliders in highD.py
+* Introduction of sliders in highD
+* OfferAHybrid in HighD
+* Added slider objects for highD.py
+* Beginning highD project
+* Change patron default
+* Change default behave for VMobject.apply\_function
+* End of independence project
+* Improve README readability
+* Preliminary end to eop/independence
+* Up through PointOutSimplicityOfFormula of eop/independence
+* Up to CorrelationsWith35Percent in eop/independence
+* Halfway through eop/independence project
+* Beginning eop/independence
+* Minor edits to fractal files
+* Moving crypto.py to old\_projects
+* Minor edits to README
+* Moving crypto and 256 to old\_projects folder
+* Posted 256 video
+* All animation for 256 bit video
+* Supplement to bitcoin video
+* Bitcoin video is published
+* Draft of crypto video is published
+* A few crypto fillers
+* Preliminary end to crypto animations
+* First full pass of crypto animations
+* VariableProofOfWork in crypto
+* Up to double spending attack in crypto
+* Up to TwoBlockChains in crypto
+* IntroduceBlockCreator
+* Up to IntroduceBlockChain in crypto
+* Added support for Windows
+* Up to decentralization in crypto.py
+* Up to DescribeDigitalSignatures in crypto
+* Introduction of cryptocurrency video
+* Starting cryptocurrency project
+* Final tweaks to bayes
+* Patron-published versions of Bayes videos
+* Small fixes to Bayes videos
+* Preliminary end of bayes followup video
+* Initial bayes\_footnote animations
+* Preliminary end to bayes animations
+* Beginning MusicExample of bayes
+* GeneralizeBayesRule of eop/bayes
+* Tweaked estimates in UpdatePokerPrior
+* Posterior update animations in eop/bayes
+* Fixed bug associated with empty input strings
+* Poker hand scene of eop/bayes
+* Have scenes first write to a temporary file path so as to not accidentally write over previous animations
+* Just starting Bayes video for eop
+* Added playing cards
+* Small merge
+* Some simple typo fixes
+* Some simple small speedups
+* Moving triples to old\_projects
+* Finished pythagorean triples project
+* Preliminary finish to animations of triples
+* Finished main visualizations of triples
+* Just before main visualization in triples
+* Up to intro of squaring method in triples project
+* Changed "mathplotlib" to "matplotlib"
+* Beginning pythagorean triples project
+* Some refactor of NumberPlane. Quite likely breaks some old\_projects
+* Moving leibniz to old\_projects
+* End of Leibniz project
+* Preliminary end to leibniz project
+* Partway through AddUpGrid in Leibniz
+* Up to WriteCountingRuleWithChi in lebniz
+* Halfway through IntroduceRecipe of Leibniz project
+* Deleted the cast error in class TOP
+* Up to introduction of factorization in leibniz
+* Up to conjugate introduction
+* Finished CountThroughRings of leibniz
+* Beginning CountThroughRings scene of Leibniz
+* Added LaggedStart animation
+* Preparing first lattice point counting scene
+* Introduction of Leibniz
+* Beginning Leibniz project
+* Fixed -o flag functionality for extract\_scene.py
+* Whoops, forgot to change tk\_scene.py
+* Whoops, forgot to change tk\_scene.py
+* Scenes now pass frames directly to ffmpeg pipe when writing movies, rather than saving them all up in bulk then passing in the list
+* Added foreground\_mobjects to scenes, so that static mobjects can be on top of animated ones
+* CountingScene improvements by CrypticSwarm
+* PiCreature scenes shouldn't break, though specific designs are still out of the public repo
+* Finished with full Essence of Calculus project
+* Modified sound when done if runtime error (in case of quitting if -p is present)
+* End of eoc project
+* Handle latex errors when converting to dvi
+* Make pip to install aggdraw from github
+* Some calc cleanup
+* Remove meta\_animations from animation.\_\_init\_\_.py
+* Some simple eoc cleanup
+* Preliminary end to eoc10
+* Up to RadiusOfConvergenceForLnX in eoc10
+* Up to SecondTermIntuition in eoc10
+* Fixed issue of buff with curved lines/arrows
+* FactorialTerms scene of eoc10
+* Add promotion animations to eoc2
+* Super hacky AoPS logo class
+* Enabling curvature in Lines/arrows
+* Start of CubicAndQuarticApproximations in eoc10
+* Finished ConstructQuadraticApproximation of eoc10
+* Partial progress through very long ConstructQuadraticApproximation in eoc10
+* Added simple endscreen animation
+* Some eoc cleanup
+* A few cleanups to eoc5 and eoc9
+* Antiderivative of eoc9
+* Halfway through eoc9
+* ApplyMethod now creates a deep copy of the object it works on
+* Random cleanups to eoc
+* Nested configs are now merged, instead of overridden
+* Fixed Riemann rectangle gap bug
+* Finished eoc8
+* Preliminary end to eoc8
+* Finished fundamental theorem scenes of eoc8
+* Further eoc8 progress
+* Just beginning FTOC animations of eoc8
+* Finished giant PiecewiseConstantPlot scene
+* Beginning of eoc8
+* Some cleanup on eoc1
+* Final tweaks to eoc/chapter1 remake
+* Preliminary end to eoc1 remake
+* Improvements to introduce\_bubble type scenes
+* Debugged problem with Scene.remove
+* Finished first AreaUnderParabola scene
+* About halfway through eoc1 remake
+* Finished ApproximateOneRing scene of eoc1
+* First few scens of eoc1 remake
+* Beginning redo of eoc/chapter1
+* Finished eoc7
+* Finished general L'Hoptital example of eoc7
+* Simplified TexMobject by making the submobjects of those with multiple expression parts actual TexMobjects themselves, instead of VGroups
+* eoc7 just finished LHopitalExample, but might redo a lot
+* Beginning L'Hopital's example of eoc7
+* Updated copy method of PiCreature clas
+* EpsilonDeltaCounterExample
+* Finished epsilon-delta animations
+* Some bug fixes associated with new copy method
+* Moved more of animation cleanup handling to the animations themselves
+* Made Mobject.copy somewhat lighter-weight
+* Limits progress, just before final epsilon-delta scenes
+* Conglomeration of changes for eoc7
+* Bug fix to AnimationGroup
+* Finished formal derivative definition animations of eoc7
+* RefreshOnDerivativeDefinition in eoc7
+* Some finishing touches to exp\_footnote
+* Preliminary end to exp\_footnote
+* Natural log scene of exp\_footnote
+* AnalyzeExponentRatio of exp\_footnote
+* 2^t example for exp\_footnote in eoc
+* add support of transform="matrix(...)" and fix bugs win lowercase commands
+* fix problem with integer data type of start\_to\_end
+* fix get\_subpath\_mobjects() when a submobject has no attribute 'is\_subpath'
+* Actual end to eoc5
+* Final touches to eoc5 before publishing to Patrons
+* Preliminary end to eoc5 animations
+* Added get\_part\_by\_tex method
+* Improvement to the still-sketchy three\_d stuff
+* Bug fix to finding submoject critical point
+* Finished RelatedRatesExample of eoc5
+* Fix to how brace tip is found
+* Beginning related rates example in eoc5
+* Halfway through SlopeOfCircleExample in eoc5
+* Just starting SlopeOfCircleExample
+* Small improvements to NumberPlane class
+* Introducing common\_scenes.py file
+* Starting eoc5, and how did I not notice the weird cow problem that snuck its way into the scene directory?
+* Moving efvgt.py into old\_projects
+* End of efvgt project
+* A few edits to efvgt project
+* Preliminary end to efvgt
+* efvgt work up to ComplexExponentiation
+* Up to exponentiation as a homomorphism in efvgt
+* Up to multiplicative group of reals in efvgt
+* Finished additive groups of efvgt
+* Up to group structure description of efvgt
+* Symmetries of a square
+* Starting into symmetry description for efvgt
+* 3d stuff is still rudimentary, but slightly less buggy now
+* Moved complex transformation out of zeta
+* Beginning of efvgt project
+* Starting eoc/exp\_footnote video
+* Finished eoc4
+* More eoc4 touchups
+* eoc4 updates, mainly a revamped sum rule scene
+* Preliminary end to eoc4 animations
+* Up to three lines chain rule in eoc4
+* Sure, I \*could\* separate all these updates into separate reasonable commits, but where's the fun in that?
+* Intro animation for eoc4
+* PiCreatureScene and TeacherStudentScene refactors
+* A few 3d updates
+* End of Borsuk project
+* Improvements to ReconfigurableScene, smarter transitions
+* Fixing some animations as I put together video
+* Added ReconfigurableScene.  Should make for fun times
+* Preliminary end to Borsuk-Ulam project
+* A few bug fixes to the very buggy SVGMobject
+* Showed sphere/necklace-division association
+* MakeTwoJewelCaseContinuous mega-scene in borsuk
+* Finished 'proof' of Borsuk-Ulam
+* Start at classic temp/pressure example of borsuk
+* Initial necklace animations in Borsuk
+* Finished eoc3
+* Preliminary finish to eoc3 animations
+* Finished trig scenes for eoc3
+* Partway through derivative of sine explanation
+* Structure set for OneOverX in eoc3
+* Power rule in eoc3
+* Pattern for power rule in eoc3
+* Finished cube animation for eoc/chapter3
+* Moved fractal projects
+* 80% through cube example
+* Introduced DrawBorderThenFill Animation
+* Renaming MED\_BUFF constant
+* First scene of eoc/chapter3
+* A few more fractal animations
+* GraphScene refactor that will definitively mess up existing chapter1 and chapter2 GraphScene animations
+* End of fractal\_dimension project
+* More filler animations for fractal project
+* Accounted for edge case in PiCreatureScene play method where last listed anim transformed pi creature
+* Add a little prettiness to the fractal video
+* Preliminary end to fractal\_dimension animations
+* Nearly done with fractal dimension project
+* Up to description of Sierpinski dimension
+* Removed a dumb line which was a relic from older days
+* Up to initial discussion of scaling
+* Added \_\_len\_\_ method for mobjects
+* Added light greys to color pallete
+* Changed how PiCreatureScene gets creature to look at animated mobjects
+* More fractal additions
+* Initial zoom in on diamond fractal
+* Beginning fractal dimension project
+* Move tattoo project, and create fractal\_dimension
+* Published draft of eoc/chapter2 for patrons
+* Preliminary end to eoc/chapter2 animations
+* No real changes here, just was playing more with zeta.py is all
+* A few follow-ons to the t^3 example in eoc/chapter2
+* Halfway through TCubedExample
+* Up to SecantLineToTangentLine in eoc/chapter2
+* Completed non-infinitesimal explanation
+* Up to VelocityAtIndividualPointsVsPairs in eoc chapter2
+* Somehow mixed up names of test scenes in zeta
+* Initial scenes for paradox of velocity at one time in eoc/chapter2
+* Added ShowSpeedometer Scene
+* Updated fractals to be more vectorized
+* Up to GraphCarTrajectory of eoc chapter 2
+* Finished tattoo video
+* Fixed interpolation problem in ExplainTrigFunctionDistances
+* Finished large ExplainTrigFunctionDistances scene
+* Beginning tattoo project
+* A few more calc chapter 2 animations
+* Beginning EoC Chapter 2
+* Finished up zeta project
+* More filler animations
+* Add a few filler animations for zeta
+* Preliminary finish to zeta project
+* Preliminary finish to discussion of zeros
+* Up to description of angle-preservation
+* Up to squiggling on random extensions in zeta
+* Up to motivation for analytic continuation
+* Up to definition of zeta in complex numbers
+* Beginning zeta project
+* Retire hanoi.py to old\_projects
+* Whoops, last commit seriously messed up camera
+* Finished Hanoi project
+* Preliminary end to hanoi animations
+* Beginning Sierpinski graph in hanoi.py
+* Finished recursive solution to constrained Hanoi
+* Up to showing recursive algorithm in Hanoi
+* Up to binary counting introduction in hanoi.py
+* Updated Pillow/aggdraw requirement information
+* Initial hanoi animations
+* Up to patron-posted draft of eoc/chapter1.py
+* Preliminary end to eoc/chapter1 animations
+* Up to graphed integral in eoc chapter1
+* Up to intro integral in eoc chapter 1
+* Up to BuildToDADR in eoc chapter1
+* Beginnings of CircleScene infrastructure for eoc chapter 1
+* Moved topology/patreon animations to old\_projects
+* Moved topology/patreon animations to old\_projects
+* Whoa boy, I've gotta get better about my commits..
+* Basically the end of wcat
+* Preliminary set of full wcat animations
+* Up to folding the unit square in wcat
+* Up to 'DeformToInterval' in wcat project
+* Just before torus/mobius stuffs
+* Up to definition of problem in wcat
+* Patreon animations
+* Initial pateron announcement animations
+* Retiring eola
+* End of EoLA
+* Pre-matrix rewrite of chapter 11
+* More on abstract vectors spaces up to Polynomial space
+* Just before rewrite of chapter 11
+* Beginning chapter 11 animations
+* A few cleanup chapter10 animations
+* Preliminarily done with Chapter 10 animations
+* Up to definition of eigenvectors
+* Start of chapter 10
+* Finished chapter 9
+* Up to change of basis matrix introduction
+* A bit more into chapter 9
+* Better PiCreature.look methods
+* Bug fixes after last scene update + some renaming
+* Just starting chapter 9
+* Scene better keeps track of all mobjects
+* Able to pass in multiple methods with same underlying object as Scene.play args
+* A more honest README
+* adds support for docker
+* modification to requirements/example\_scenes to make it slightly less unusable
+* Published chapter 8
+* Rough drafts for chapter 8 parts
+* Beginning chapter 8p2
+* Finished god-awfully long Define2dCrossProduct Scene
+* A nice small commit capturing one atomic change, as usual
+* More finishing touches to chapter 7
+* Chapter 7 animation edits
+* Preliminary finish of chapter 7 animations
+* Added sound to mark when animation finishes
+* 3/4 Dot products
+* Halfway through dot products
+* Up to standard intro of dot products
+* Starting chapter 7
+* Truly finished chapter 6
+* End of chapter 6
+* 75% of Chapter 6
+* Revert back to original TexMobject.add\_background\_rectangle
+* Halfway through chapter 6
+* Finished initial animations for chapter 5
+* More chapter 5, plus some renaming fun
+* First page of chapter 5
+* About to start chapter 5
+* Footnote about 3d transformations
+* Up to associativity in EoLA chapter 4
+* You can now call thing like scene.play(mob.shift, RIGHT)
+* Starting chapter 4
+* Preliminary end to chapter 3 animations
+* EoLA Chapter 3 before Monday rewrite
+* Starting to animate chapter 3 rewrite
+* Up to formal definition of linearity in EoLA chapter 3
+* Introduced update\_submobject to Animation.  I'd be surprised if this didn't break something
+* Farther along EoLA chapter 3
+* Beginning EoLA chapter 3
+* Decided not to alter (effective) run times of concurrent animations
+* Finished with preliminary chapter 2 animations
+* up to ShowVaryingLinearCombinations in eola chapter 2
+* Further in chapter 2 of eola
+* Refactored ShowCreation submobject management to Mobject class
+* Better Scene mobject management
+* Scene no longer cares about pointless mobjects
+* Starting chapter 2 of eola
+* Up to vector addition in chapter 1
+* Through coordinates section in chapter 1
+* Beginning eola chapter 1
+* Finished preliminary animations for eola intro video
+* Up to physics example in eola chapter 0
+* Beginning eola project
+* Evidently this requires out of date PIL..
+* fixed triangle of power mistake
+* Random cleanup
+* updates instructions using my patched version of aggdraw for pillow 3.x
+* Added a few example scenes
+* Added example\_scenes.py to make things slightly less unfriendly
+* Moving thing files around after TOP project
+* adds dependencies in requirements.txt and moves output directory within the folder so its self contained
+* ignores pyc files
+* Finished triangle of power project
+* Additive/multiplicative rules
+* Initial few triangle scenes of TOP project
+* Beginnings of TOP project
+* Write class is looking pretty nice
+* More vectorizations conversions
+* Characters are vectorized
+* TexMobjects are looking pretty good
+* Vectorize all the things
+* Better alignment of sub\_mbojects
+* Better interpolation, bezier subpaths, and color bugfix
+* Introduced notion of a subpath
+* ShowPartial works for vectorized mobjects
+* Possibly better alignment algorithm
+* Interpolation for vectorized mobjects implemented
+* Starting to vectorize
+* End of brachistochrone problem
+* Many filler animations for Brachistochrone
+* On to cycloid animations
+* Not sure why these still existed..
+* Fixes to multilayered scnes
+* Improved angle/slope methods on Line
+* Got sick of inconsistant Tex sizes
+* MoveAlongPath animation
+* Finished first pass of multilayered glass scenes
+* fixed tiny config error for Square
+* Starting multilayered scenes
+* Vector
+* freeze\_background for scenes
+* Up to spring solution in Brachistachrone
+* More brachistochrone work, #screwgoodcommitpractices
+* Starting redo of Brachistochrone
+* ZoomedScene improvements
+* Initial ZoomedScene
+* DEFAULT\_CONFIG -> CONFIG
+* MovingCamera has started working
+* record shape in place of height and width separately
+* Using Camera class instead of displayer module
+* First implementation of Camera to replace disp
+* Messy pile of brachistochrone work
+* Turns out generate\_logo was broken, who knew?
+* position\_endpoint\_ot
+* (slightly?) better name
+* Preliminary Lens, Mirror and Glass scenes established
+* Photon through lens
+* Disection of brachistochrone project
+* Higher abstraction of ShowCreation to show partial mobjects over time
+* Starting Brachistochrone animations, sliding path is doable
+* tuplify bug fix
+* Thickness made drawing blurry
+* A class to automatically trace edges of an image
+* Add reverse frames to scene
+* One more example for vector field articles
+* wrapped up div/curl articles
+* FilledRectangle class
+* Moved Hilbert project out of main directory
+* Final hilbert tweaks
+* Final animation for Hilbert, I think
+* A few more vector field fluid flow examples
+* Added virtual time to PhaseFlow
+* A few curl animations
+* compass directions iterator
+* Added PhaseFlow animation, and probably-useful ApplyToCenters meta-animation
+* Small fixes while putting together Hilbert video
+* Making divergence material more general for curl animations
+* Polygon.points was overloaded
+* Don't call super with \*args
+* Couple scene bug fixes
+* All preliminary animations for hilbert video
+* All animations for divergence article
+* Transform copies ending mobjects
+* Animations to illustrate divergence
+* tiling space with hilbert curve
+* Edge case for degenerate lines/arrows
+* Removed meta\_animation module, seems seems a bad way to separate things
+* Animations up to formal definition of Hilbert Curve
+* Small bug in how displayer had been refactored
+* Finished definition of continuity
+* Improvements to ParametricFunction
+* Scene.play changed such that Animations can reassign mobject attr during animation
+* newline should not separate \onslide tex parts
+* GrowFromCenter transforms the mobject itself
+* alpha\_func and interpoloation\_function renamed to rate\_func and path\_func
+* Doc change
+* Through defining curves portion of hilbert project
+* Use better progress bar library
+* Arrow can take one arg
+* less index reliance on number line
+* Why did MobjectFromRegion not specify color?
+* DARK\_GREY
+* ShrinkToCenter
+* HilbertCurveIsPerfect indeed
+* Added thin\_out method
+* Gave control of ''image'' subdirectory to Scene
+* Added script to stage animations in nicely sorted order
+* Finished preliminary animations for hilbert section 1
+* ShowCreation works with submobjects
+* Made add-a-point hack a slightly better hack
+* Pure yellow is better for YELLOW\_C
+* Ask Mathematician Friend
+* Different default arrow color
+* Fixed PiCreature mouth, but more work remains
+* New package to support interrobang
+* Added GREY
+* Fixed ShowCreation
+* Rename get\_full\_submobject\_family
+* Introducing inverse mapping as weaving
+* Bug in Arrow buffer
+* Bug fix to bug fix on Mobject.fade method
+* SnakeCurve goes through grid cells now
+* animations for listening to pixels explanation
+* Fix to Stars Mobject
+* Slightly faster sort\_points method, and bug fix in fade
+* made not\_quite\_there alpha\_func more general
+* quick rgb-should-be-numpy-array bug fix
+* New MobjectFromImageArray class and MobjectFromRegion class
+* Added GRAY constant
+* Turned VibratingString animation into more general Vibrate
+* More hilbert work, including simple new Grid mobject
+* Dimensionality of data
+* added Brace mobject to replace Underbrace
+* Minor improvements to vibrating string, plus copy method to animation
+* ImageToSound
+* AboutSpaceFillingCurves
+* Prepping for hilbert curve project
+* More flexible space filling curve class
+* Better space-filling curve infrastructure
+* Beginning Hilbert project
+* Transformation article
+* Beginning transform KA article, many small fixes to the mobject refactor
+* Align data and transform now working with new format
+* Mobjects now contain submobjects, giving a heirarchy.  Thus CompoundMobject is replaced simply with Mobject, and display etc. needed updating
+* Now save and show image happens before write when -ws flag is passed in
+* Changed colors to accurately match KA color scheme
+* Refactor generate\_logo
+* Refactored scene
+* Actually following tex templates now
+* Refactored tex\_utils, and made TexMobject proper objects
+* Redid digest\_config and introduced digest\_locals
+* middle of massive restructure, everything still broken
+* Finished first Khan Articles
+* Starting complex number animations
+* Finally have faster video writing capabilities
+* Complete script\_wrapper rewrite
+* A few fixes to initial point\_thickness implementation
+* Displahying with thickness is finally fast
+* Much pythagoras, plus better point thickness and display implementations
+* Polygon Class
+* Material needed for matrix as transform article
+* ShowMultiplication implemented
+* TransformScene2D mostly implemented
+* Remove arrow tips
+* slight improvements to NumberPlane
+* Potentially useless ApplyMatrix animation
+* change Scene.apply to take in mob\_to\_anim function instead of Animation class
+* paint\_into\_background added
+* Initial implementation of NumberPlane
+* spelling change, spacial to spatial
+* reorganize pile of old scripts
+* scene.apply method, which required switching order or ApplyFunction arguments
+* Final few music and measure edits
+* True end of Music and Measure draft 1
+* First draft of music and measure theory
+* Applied digest\_config to almost all \_\_init\_\_ functions
+* More music\_and\_measure, animate->play, making NumberLine better
+* Beginning music and measure theory
+* Finished Counting in Binary project
+* One third of the way through counting in binary project
+* Implemented SceneFromVideo
+* Better creatures and image mobject caching
+* End of inventing math video
+* All animations for first draft of inventing math
+* Began reanimating much of inventing math.  Also there is DelayByOrder now, which is awesome
+* Maybe 2/3 through inventing math project
+* More inventing math progress
+* start of inventing math
+* Random changes during starty of inventing math
+* Finished Tau Poem
+* Finished with ECF Project
+* Nearly done with ecf
+* Randolph and Mortimer
+* Beginnings of organization
+* preview timing improvements + imcorporated into script wrapper
+* redimentary ability to preview scenes
+* Finished Moser Project
+* moser moser
+* MoserSolutionInPascal
+* Proper script wrapping implemented
+* Preliminary script wrapper implemented and applied to moser/main.py, more moser/main.py functions as well
+* Chopping stuff up in Moser
+* Whoops, forgot to commit these deletions..
+* Some graph utilities implemented for Moser videos
+* More moser, count method of scene implemented
+* starting main moser video
+* Moser Intro animations complete
+* Regions slightly integrated with scenes, and creating regions from lines is simple
+* initials of region cleaned and implemented
+* tex mobjects implemented
+* Preliminaries of scene-oriented model implemented
+* post epii project state, without tex files
+* Update README.md
+* Initial commit
