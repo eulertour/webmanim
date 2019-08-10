@@ -1,0 +1,10 @@
+package:
+  name: manimlib
+  version: 0.1.11.dev13
+source:
+  sha256: 895818bdc078c92f6fe64cef0ccf6314fb4364bd205e7272fc055fcff358e96d
+  # url: https://files.pythonhosted.org/packages/d1/57/1ed0a44a8b97ffa0cf3d9fa8d4bdf3742d9984fd39ff6b3291af597045ee/manimlib-0.1.10.tar.gz
+  path: /home/devneal/webmanim/dev/manim
+test:
+  imports:
+  - manimlib
