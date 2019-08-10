@@ -1,0 +1,142 @@
+sqlite3-shell.o: shell.c \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libcxx/stdlib.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libcxx/__config \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/compat/stdlib.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/stdlib.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/features.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/bits/alltypes.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/alloca.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libcxx/string.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/compat/string.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/string.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/strings.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libcxx/stdio.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/stdio.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/assert.h \
+  sqlite3.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/compat/stdarg.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/stdarg.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libcxx/ctype.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/compat/ctype.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/ctype.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/signal.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/bits/signal.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/pwd.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/unistd.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/bits/posix.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/dirent.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/sys/types.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/endian.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libcxx/stdint.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/stdint.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/bits/stdint.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/sys/select.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/sys/sysmacros.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/compat/sys/stat.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/sys/stat.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/bits/stat.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/sys/time.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/sys/resource.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/bits/resource.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/fcntl.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/bits/fcntl.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/utime.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/compat/time.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/time.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libcxx/errno.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/errno.h \
+  /src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/bits/errno.h
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libcxx/stdlib.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libcxx/__config:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/compat/stdlib.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/stdlib.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/features.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/bits/alltypes.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/alloca.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libcxx/string.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/compat/string.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/string.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/strings.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libcxx/stdio.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/stdio.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/assert.h:
+
+sqlite3.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/compat/stdarg.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/stdarg.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libcxx/ctype.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/compat/ctype.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/ctype.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/signal.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/bits/signal.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/pwd.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/unistd.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/bits/posix.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/dirent.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/sys/types.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/endian.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libcxx/stdint.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/stdint.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/bits/stdint.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/sys/select.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/sys/sysmacros.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/compat/sys/stat.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/sys/stat.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/bits/stat.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/sys/time.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/sys/resource.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/bits/resource.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/fcntl.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/bits/fcntl.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/utime.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/compat/time.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/time.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libcxx/errno.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/errno.h:
+
+/src/emsdk/emsdk/emscripten/tag-1.38.30/system/include/libc/bits/errno.h:

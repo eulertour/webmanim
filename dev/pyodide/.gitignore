@@ -16,7 +16,6 @@ host
 installs
 ccache
 packages/
-cpython/
 build/scipy.*
 
 /root/
