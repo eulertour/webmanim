@@ -1,0 +1,70 @@
+{
+  "name": "two.js",
+  "version": "0.7.0-beta.3",
+  "description": "A renderer agnostic two-dimensional drawing api for the web.",
+  "module": "build/two.module.js",
+  "files": [
+    "package.json",
+    "LICENSE",
+    "README.md",
+    "build/two.js",
+    "build/two.min.js",
+    "build/two.module.js",
+    "extras",
+    "src"
+  ],
+  "directories": {
+    "doc": "documentation",
+    "test": "tests",
+    "example": "utils"
+  },
+  "keywords": [
+    "svg",
+    "canvas2d",
+    "webgl",
+    "animation",
+    "rendering",
+    "scenegraph",
+    "motiongraphics",
+    "visualization",
+    "dom",
+    "w3c"
+  ],
+  "homepage": "https://two.js.org/",
+  "author": {
+    "name": "jonobr1",
+    "url": "http://jonobr1.com/"
+  },
+  "main": "build/two.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonobr1/two.js"
+  },
+  "bugs": {
+    "url": "https://github.com/jonobr1/two.js/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "animation-frame": "^0.1.7",
+    "blueimp-canvas-to-blob": "^2.1.0",
+    "jsdoc": "~3.5.5",
+    "jsdoc-to-markdown": "^4.0.1",
+    "moment": "^2.22.2",
+    "node-minify": "^2.0.3",
+    "qunitjs": "^2.4.0",
+    "resemblejs": "^1.1.1",
+    "underscore": "^1.9.1"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/jonobr1/two.js.git",
+    "fileMap": [
+      {
+        "basePath": "build",
+        "files": [
+          "two*.js"
+        ]
+      }
+    ]
+  }
+}

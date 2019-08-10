@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script>
+      window.languagePluginUrl = "http://dev.eulertour.com:9000/";
+    </script>
+    <script src="http://dev.eulertour.com:9000/pyodide.js"></script>
+  </head>
+  <body>
+    <textarea id="python-input" rows=20 cols=50>
+    </textarea>
+    <button onClick="runManim()">
+      manim
+    </button>
+    <script>
+      document.getElementById("python-input").value =
+`from manimlib.imports import *
+
+class SquareToCircle(WebScene):
+  def construct(self):
+    circle = Circle()
+    square = Square()
+    square.flip(RIGHT)
+    square.rotate(-3 * TAU / 8)
+    circle.set_fill(PINK, opacity=0.5)
+
+    self.play(ShowCreation(square))
+    self.play(Transform(square, circle))
+    self.play(FadeOut(square))`
+
+      window.languagePluginLoader.then(() => {
+        let manimlib_uri = "http://dev.eulertour.com:9000/manimlib.js";
+        window.pyodide.loadPackage(manimlib_uri).then(() => {
+          window.pyodide.runPython("import manimlib");
+          window.pyodide.runPython("import numpy");
+          window.manimlib = window.pyodide.pyimport("manimlib");
+          window.numpy = window.pyodide.pyimport("numpy");
+        });
+      });
+
+      function runManim() {
+        var code = document.getElementById("python-input").value;
+        var sceneObj = window.manimlib.get_scene(code, ["SquareToCircle"]);
+        sceneObj.render();
+      }
+    </script>
+  </body>
+</html>
