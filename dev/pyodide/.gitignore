@@ -17,6 +17,7 @@ installs
 ccache
 packages/
 cpython/
+build/scipy.*
 
 /root/
 !packages/manimlib/**/*
